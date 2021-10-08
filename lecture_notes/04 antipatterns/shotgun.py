@@ -1,7 +1,8 @@
 def get_age():
     year = int(input())
-    if year >= 2021:
-        print("Sorry, allowed maximum is 2021")
+    current_year = 2022
+    if year >= current_year:
+        print(f"Sorry, allowed maximum is {current_year}")
         return None
 
-    return 2021 - year
+    return current_year - year
