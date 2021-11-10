@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Implementation
+
 int MAX_PURCHASE = 2000;
 
 int calculateTotal(int prices[], int length) {

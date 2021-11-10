@@ -1,5 +1,7 @@
 'use strict';
 
+// Implementation
+
 const MAX_PURCHASE = 2000;
 
 const calculateTotal = (prices) => {
