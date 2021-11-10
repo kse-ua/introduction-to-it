@@ -1,3 +1,5 @@
+# Implementation
+
 MAX_PURCHASE = 2000
 
 def calculateTotal(prices):
