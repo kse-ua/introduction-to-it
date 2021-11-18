@@ -1,4 +1,4 @@
-# Tasks
+# Tasks for lecture 2
 
 - Create `github` repository
 - Take example from `introduction-to-it/lecture_notes/07 basics/0-buggy.*`
