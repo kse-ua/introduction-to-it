@@ -1,4 +1,4 @@
-let first_num = 2;
-let secord_num = 3;
+let firstNum = 2;
+let secondNum = 3;
 let sum = firstNum + secondNum;
-alert(sum);
+console.log(sum);
