@@ -1,8 +1,11 @@
-MAX_VALUE = 10
+import sys
 
-print('Begin')
+var = sys.argv[1]
 
-for i in range(MAX_VALUE):
-  print('i:', i)
+def loop_func(var):
+    print("Begin")
+    for i in range(0, int(var), 1):
+        print("i: ", i)
+    print("end")
 
-print('The end')
+loop_func(var)
