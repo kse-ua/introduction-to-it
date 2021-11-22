@@ -9,6 +9,8 @@ const union = (s1, s2) => {
   return ds;
 };
 
+// const union = (s1, s2) => new Set([...s1, ...s2]);
+
 // Usage
 
 const cities1 = ['Beijing', 'Kiev'];

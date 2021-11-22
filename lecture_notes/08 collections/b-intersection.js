@@ -9,6 +9,10 @@ const intersection = (s1, s2) => {
   return ds;
 };
 
+// const intersection = (s1, s2) => new Set(
+//   [...s1].filter((v) => s2.has(v))
+// );
+
 // Usage
 
 const cities1 = ['Beijing', 'Kiev'];
