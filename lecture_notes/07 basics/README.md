@@ -1,4 +1,4 @@
-# Tasks for lecture 2
+# Tasks for lecture 7: programming basics
 
 - Create `github` repository
   - Click `+` button in the right-top corner in github browser UI
