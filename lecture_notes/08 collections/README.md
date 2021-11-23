@@ -1,4 +1,4 @@
-# Tasks for collections
+# Tasks for lecture 8: collections
 
 - Fork repository `https://github.com/kse-ua/introduction-to-it`
   - We will work with collections: array, set, list, hash
