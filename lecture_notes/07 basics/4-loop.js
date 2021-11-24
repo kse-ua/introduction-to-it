@@ -6,4 +6,5 @@ function sum(...args){
     return output;
 }
 
-console.log(sum(5,3,2));
+const result = sum(5,3,2)
+console.log(result);
