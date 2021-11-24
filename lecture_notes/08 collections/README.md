@@ -1,0 +1,25 @@
+# Tasks for lecture 8: collections
+
+- Fork repository `https://github.com/kse-ua/introduction-to-it`
+  - We will work with collections: array, set, list, hash
+  - Create branch, for example `lab-8`
+  - Open directory `introduction-to-it/lecture_notes/08 collection`
+- Modify example `1-array.*`
+  - Find in search engine how to add and remove array elements
+  - Add/remove at the end of array: `push`, `pop`
+  - Add/remove at the top of array: `unshift`, `shift`
+  - Try to modify and execute examples for JavaScript, Python, and C++
+- See example `2-function.*`, here we put code into function for reuse
+  - Compare JavaScript and Python examples
+  - For those who want C++ try to implement it with C++ (optional)
+- Let's use `function expression` (or `lambda`, or `arrow function`)
+  - Compare `3-func-exp.js` and `3-lambda.py`
+- Array concatenation for JavaScript, Python, and C++
+  - We have 3 versions, let's analyze `4-concat.*`
+  - Refactor example moving concatenation to the function for C++
+  - Optimize JavaScript example
+  - Python need no improvements, it's simple enough
+- Data structures: set, dictionary
+  - Translate JavaScript examples with Set and Map to Python
+  - Use `set` and `dict` for Python
+  - For those who want C++ try to implement it with C++ (optional)
