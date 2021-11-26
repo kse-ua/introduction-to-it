@@ -10,13 +10,13 @@ purchase = {
 }
 
 electronics = purchase['Electronics']
-print(electronics)
+print({ 'electronics': electronics })
 
 textile = purchase['Textile']
-print(textile)
+print({ 'textile': textile })
 
 bag = textile[0]
-print(bag)
+print({ 'bag': bag })
 
 price = purchase['Electronics'][2]['price']
-print(price)
+print({ 'price': price })
