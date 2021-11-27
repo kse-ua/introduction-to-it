@@ -22,9 +22,10 @@ int main() {
 
     int* ages = concat(school_ages, school_length, student_ages, student_length);
 
-    for (int i = 0; i < length; i++) {
-        printf("ages[%d]: %d\n", i, ages[i]);
+    for (size_t i = 0; i < length; i++) {
+        printf("ages[%zu]: %d\n", i, ages[i]);
     }
 
+    delete[] ages;
     return 0;
 }
