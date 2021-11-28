@@ -16,7 +16,7 @@ void print_vector(const vector<string>& v, const string& comment) {
 
 vector<string> difference(const vector<string>& v1, const vector<string> v2) {
     vector<string> v;
-    size_t max_size = v2.size();
+    size_t max_size = v1.size();
     v.reserve(max_size);
     size_t actual_size = 0;
     for (const auto& s: v1) {
@@ -36,7 +36,8 @@ vector<string> complement(const vector<string>& v1, const vector<string> v2) {
 }
 
 vector<string> fast_difference(vector<string> v1, vector<string> v2) {
-    vector<string> v(v2.size());
+    size_t max_size = v1.size();
+    vector<string> v(max_size);
     sort(v1.begin(), v1.end());
     sort(v2.begin(), v2.end());
     auto end_it = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), v.begin());
