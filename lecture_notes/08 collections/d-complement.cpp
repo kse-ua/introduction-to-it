@@ -45,7 +45,7 @@ vector<string> fast_difference(vector<string> v1, vector<string> v2) {
     return v;
 }
 
-vector<string> fast_complement(vector<string> v1, vector<string> v2) {
+vector<string> fast_complement(vector<string>& v1, vector<string>& v2) {
     return fast_difference(v2, v1);
 }
 

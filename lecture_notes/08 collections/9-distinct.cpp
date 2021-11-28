@@ -18,7 +18,7 @@ void print_map(const DataSetValue& m) {
 
 void print_dataset(const vector<DataSetValue>& v) {
      cout << "[ " << endl;
-     for (const auto m : v) {
+     for (const auto& m : v) {
         cout << "\t";
         print_map(m);
      }
