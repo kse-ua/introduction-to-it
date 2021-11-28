@@ -10,4 +10,5 @@ print({'first': first, 'last': last})
 
 # While get_first_and_last lambda in python and getFirstAndLast function in the js version serve the same purpose,
 # their return types are not equivalent. The js version returns an object with two properties first and last.
-# In the python implementation, a tuple of 2 elements is returned.
+# In the python implementation, a tuple of 2 elements is returned. Also, python lambdas only allow to specify
+# a single expression to be returned while in js you can write any number of statements before return.
