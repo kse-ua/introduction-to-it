@@ -44,18 +44,17 @@ const test = (cases) => {
 };
 
 test([
-  [addProcedure, [  1,   2],   3],
-  [addProcedure, [100,  20], 120],
+  [addProcedure, [1, 2], 3],
+  [addProcedure, [100, 20], 120],
   [addProcedure, [100, 200], 300],
-  [subProcedure, [  5,   2],   3],
-  [addProcedure, [  5,   2],   7],
+  [subProcedure, [5, 2], 3],
+  [addProcedure, [5, 2], 7],
 ]);
 
 test([
-  [addFunction, [  1,   2],   3],
-  [addFunction, [100,  20], 120],
+  [addFunction, [1, 2], 3],
+  [addFunction, [100, 20], 120],
   [addFunction, [100, 200], 300],
-  [subFunction, [  5,   2],   3],
-  [addFunction, [  5,   2],   7],
+  [subFunction, [5, 2], 3],
+  [addFunction, [5, 2], 7],
 ]);
-

@@ -3,8 +3,8 @@
 const counter = {
   value: 0,
   inc(x) {
-    return this.value += x;
-  }
+    this.value += x;
+  },
 };
 
 counter.inc(10);

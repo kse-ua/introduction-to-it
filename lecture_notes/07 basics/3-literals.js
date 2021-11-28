@@ -6,9 +6,7 @@ const purchase = {
     { name: 'Keyboard', price: 100 },
     { name: 'HDMI cable', price: 10 },
   ],
-  Textile: [
-    { name: 'Bag', price: 50 },
-  ],
+  Textile: [{ name: 'Bag', price: 50 }],
 };
 
 const electronics = purchase.Electronics;
