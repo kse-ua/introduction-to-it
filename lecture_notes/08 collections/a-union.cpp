@@ -27,16 +27,16 @@ vector<string> vector_union(const vector<string>& v1, const vector<string> v2) {
             actual_size++;
         }
     }
-
     v.resize(actual_size);
 
     return v;
 }
 
 vector<string> fast_union(vector<string> v1, vector<string> v2) {
-    vector<string> v(v1.size() + v2.size());
     sort(v1.begin(), v1.end());
     sort(v2.begin(), v2.end());
+
+    vector<string> v(v1.size() + v2.size());
     auto end_it = set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), v.begin());
     v.resize(end_it - v.begin());
 

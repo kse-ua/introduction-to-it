@@ -10,7 +10,6 @@ pair<int, int> get_first_and_last(const vector<int>& array) {
     return { first, last };
 }
 
-
 int main() {
     vector<int> ages{ 10, 12, 15, 15, 17, 18, 18, 19, 20 };
 

@@ -12,7 +12,6 @@ int* concat(int* array1, int length_array1, int* array2, int length_array2) {
     return result;
 }
 
-
 int main() {
     int school_ages[] = { 10, 12, 15, 15 };
     int student_ages[] = { 17, 18, 18, 19, 20 };

@@ -13,9 +13,9 @@ def fast_intersection(list1, list2):
 
 cities1 = ['Beijing', 'Kiev']
 cities2 = ['Kiev', 'London', 'Baghdad']
+print(f'cities1: {cities1}, cities2: {cities2}')
+
 intersection_result = intersection(cities1, cities2)
 fast_intersection_result = fast_intersection(cities1, cities2)
-
-print(f'cities1: {cities1}, cities2: {cities2}')
 print(f'intersection: {intersection_result}')
 print(f'fast intersection: {fast_intersection_result}')

@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    vector<int> ages{ 10, 12, 15, 15, 17, 18, 18, 19, 20 };
+    vector<int> ages { 10, 12, 15, 15, 17, 18, 18, 19, 20 };
 
     ages.erase(ages.begin());
     ages.insert(ages.begin(), 5);
@@ -15,7 +15,6 @@ int main() {
     int length = ages.size();
     int first = ages[0];
     int last = ages[length - 1];
-
 
     cout << "first: " << first << endl;
     cout << "last: " << last << endl;

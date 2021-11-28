@@ -18,7 +18,7 @@ int main() {
     ages.insert(16);
     ages.erase(20);
 
-    int values[]  = {10, 16, 19, 20};
+    int values[] = {10, 16, 19, 20};
     int values_length = sizeof(values) / sizeof(int);
     bool has_element;
 
