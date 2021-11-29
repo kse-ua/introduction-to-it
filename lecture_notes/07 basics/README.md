@@ -35,9 +35,10 @@
   - Delete branch after landing
 - Create another branch `loop`
   - `git checkout -b loop`
-- Create function `sum(...args)` returning sum of arguments
-- Create alternative implementation of `sum` (max +10)
+- Create function `sum(...args)` returning sum of arguments (max +10)
+  - Create alternative implementation of `sum`
   - Using `for..of` (for JavaScript) and `for..in` (for Python)
   - Using c-style `for` loop like in `2-for-loop.*`
-- Implement it in 3 languages and create 3 commits
-- Create PR, review and land, like we did before
+  - Implement it in 2 languages and create 2 commits
+  - Implement it in C++ (optional)
+  - Create PR, review and land, like we did before
