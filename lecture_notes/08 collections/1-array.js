@@ -8,4 +8,4 @@ ages.push('BIBA');
 ages.shift();
 ages.unshift('Start');
 console.log({ first, last });
-console.log(ages)
+console.log(ages);
