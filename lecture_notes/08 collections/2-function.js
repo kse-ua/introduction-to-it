@@ -1,13 +1,13 @@
-'use strict'     
+'use strict';     
 // Implementation
 
-//To declare function in python we use def
+// To declare function in python we use def
 const getFirstAndLast = (array) => {
-  // This line is the same in python
+//This line is the same in python
   const first = array[0]; 
-  // Here we use length to find the last element, in python we use [number]
+//Here we use length to find the last element, in python we use [number]
   const last = array[array.length - 1]; 
-  // This line is the same in python
+//This line is the same in python
   return { first, last }; 
 };
 
