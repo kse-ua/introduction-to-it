@@ -17,6 +17,6 @@ ages.shift();
 ages.unshift(4, 13);
 
 // Add elements to the end
-ages.push(25, 31)
+ages.push(25, 31);
 
-console.log("The new list is:", ages)
+console.log('The new list is:', ages);
