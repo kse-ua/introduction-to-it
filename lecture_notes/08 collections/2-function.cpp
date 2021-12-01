@@ -12,7 +12,7 @@ int printFirstLast(const int ages[], int length)
 int main()
 {
     int ages[] = {10, 12, 15, 15, 17, 18, 18, 19, 20};
-    int length = sizeof(ages) / sizeof(ages[0]);
+    int length = sizeof(ages) / sizeof(int);
     printFirstLast(ages, length);
     return 0;
 }
