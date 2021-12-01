@@ -16,4 +16,3 @@ console.log({ first, last });
 
 // JS code is pretty the same, however in JS code to get the last element subtract 1 from the len of an array.
 // Of course, to print smth in JS we should use .log and semicolon after declaring a var.
-// Generally, JS has almost thr same syntax as PY.
