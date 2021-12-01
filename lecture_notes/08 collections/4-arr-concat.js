@@ -7,7 +7,11 @@ const getFirstAndLast = (array) => ({
   last: array[array.length - 1],
 });
 
-const concat = (arr1, arr2) => arr1.concat(arr2);
+const concat = (arr1, arr2) => {
+  const arr = arr1.slice();
+  arr.push(...arr2);
+  return arr;
+};
 
 // Usage
 
