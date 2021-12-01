@@ -6,6 +6,8 @@ console.log({ ages });
 ages.add(16);
 ages.delete(20);
 
+// console.log({ ages })
+
 console.log({
   10: ages.has(10),
   16: ages.has(16),
