@@ -17,5 +17,5 @@ console.log(ages);
 delete ages[3];
 ages[3] = 16;
 console.log(ages);
-const teens = ages.slice(1,5);
+const teens = ages.slice(1, 5);
 console.log(teens);
