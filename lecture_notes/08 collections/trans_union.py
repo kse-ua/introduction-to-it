@@ -11,3 +11,6 @@ print(f"cities1: {cities1}\n cities2: {cities2}")
 
 results = union(cities1, cities2)
 print(results)
+
+# alternative way
+print(cities2 | cities1)
