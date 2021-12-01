@@ -1,3 +1,5 @@
+'use strict';
+
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 ages.splice(4, 1);
 const first = ages[0];
