@@ -11,9 +11,6 @@ void sumArray(int m,int n,int array1[],int array2[]){
             arr[i] = array2[i - m];
         }
     }
-    for (int i = 0; i < m + n; i++) {
-        std::cout << arr[i] << ' ';
-    }
     for (int i = 0; i < m+n; i++) {
     printf("ages[%d]: %d\n", i, arr[i]);
   }
