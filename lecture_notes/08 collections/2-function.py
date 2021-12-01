@@ -10,3 +10,5 @@ def getFirstAndLast(array):
 ages = [10, 12, 15, 15, 17, 18, 18, 19, 20]
 first, last = getFirstAndLast(ages)
 print(first, last)
+print({ 'first': first, 'last': last })
+
