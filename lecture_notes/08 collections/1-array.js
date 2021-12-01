@@ -13,7 +13,6 @@ ages.unshift(8,9);
 // Del the first elem from a list
 ages.shift();
 
-
 const first = ages[0];
 const last = ages[ages.length - 1];
 
