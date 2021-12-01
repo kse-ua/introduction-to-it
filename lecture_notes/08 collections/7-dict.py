@@ -6,10 +6,7 @@ ages.pop('Vasia Pupkin', 19)
 print(ages)
 
 
-def check_if_true(element):
-    if element in ages.keys():
-        return True
-    else:
-        return False
+def includes(element):
+   return element in ages.keys()
 
-print(check_if_true('Vasia Pupkin'), check_if_true('Marcus Aurelius'))
+print(includes('Vasia Pupkin'), includes('Marcus Aurelius'))
