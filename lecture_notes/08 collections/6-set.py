@@ -6,14 +6,11 @@ ages.remove(20)
 print(ages)
 
 
-def check_if_true(element):
-    if element in ages:
-        return True
-    else:
-        return False
+def includes(element):
+    return element in ages
 
 
-print(check_if_true(10), check_if_true(16), check_if_true(19), check_if_true(20))
+print(includes(10), includes(16), includes(19), includes(20))
 
 ages.clear()
 print(ages)
