@@ -11,7 +11,7 @@ ages.pop();
 
 console.log(ages);
 
-ages.push('20');
+ages.push(20);
 
 console.log(ages);
 
@@ -19,4 +19,4 @@ ages.shift();
 
 console.log(ages);
 
-ages.unshift('10');
+ages.unshift(10);
