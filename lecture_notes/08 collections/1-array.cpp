@@ -1,13 +1,15 @@
-#include <stdio.h>
+using namespace std;
+#include <iostream>
 
 int main() {
-  int ages[] = { 10, 12, 15, 15, 17, 18, 18, 19, 20 };
+  int *ages = new int[9]{ 10, 12, 15, 15, 17, 18, 18, 19, 20 };
 
   int first = ages[0];
-  int length = sizeof(ages) / sizeof(ages[0]);
-  int last = ages[length - 1];
+  int length = sizeof(ages);
+  int last = ages[length];
 
 
-  printf("first: %d\n", first);
-  printf("last: %d\n", last);
+  cout << first << endl;
+  cout << last << endl;
+  delete[] ages;
 }
