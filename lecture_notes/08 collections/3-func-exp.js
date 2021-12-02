@@ -6,7 +6,7 @@
 const getFirstAndLast = (array) => ({ 
   first: array[0], //This line is the same in python
   // Here we use length to find the last element, in python we [number of last]
-  last: array[array.length - 1], /
+  last: array[array.length - 1],
 });
 
 // Usage
