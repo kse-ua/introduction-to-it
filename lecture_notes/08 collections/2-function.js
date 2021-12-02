@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // Implementation
 
 // To declare function in python we use def
