@@ -1,4 +1,4 @@
- 'use strict';
+'use strict';
 
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 
