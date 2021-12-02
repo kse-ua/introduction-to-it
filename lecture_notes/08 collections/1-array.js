@@ -7,14 +7,14 @@ const last = ages[ages.length - 1];
 
 console.log({ first, last });
 
-ages.push()
-console.log(ages)
+ages.push();
+console.log(ages);
 
-ages.pop() 
-console.log(ages)
+ages.pop() ;
+console.log(ages);
 
-ages.shift() 
-console.log(ages)
+ages.shift(); 
+console.log(ages);
 
-ages.unshift(12) 
-console.log(ages)
+ages.unshift(12); 
+console.log(ages);
