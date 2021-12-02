@@ -4,3 +4,6 @@ first = ages[0]
 last = ages[-1]
 
 print({ 'first': first, 'last': last })
+
+ages.append(29) 
+print(ages)
