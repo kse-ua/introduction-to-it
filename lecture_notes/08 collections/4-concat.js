@@ -1,8 +1,9 @@
+'use strict';
 // Implementation
 
 const getFirstAndLast = (array) => ({
-    first: array[0],
-    last: array[array.length - 1],
+  first: array[0],
+  last: array[array.length - 1],
 });
 
 // Usage
