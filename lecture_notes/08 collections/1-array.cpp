@@ -10,27 +10,35 @@ void printArray(int* array, int size){
   printf("\n");
 }
 
-int* addDelete(int num1, int num2, int array[], int sizeAges)
+int* addDelete(int num1, int num2, int array[], int sizeArray, int* allAges)
 {
-  int allAges[50] = {};
-  for (int i = 0; i < sizeAges; i++) {
+  for (int i = 0; i < sizeArray; i++) {
     allAges[i] = array[i];
   }
   
-  allAges[sizeAges] = num2;
-  sizeAges++;
-  printArray(allAges, sizeAges);
+  allAges[sizeArray] = num2; //add num to the end
+  sizeArray++;               //add num => size = size +1
+  printArray(allAges, sizeArray);
 
-  allAges[sizeAges] = 0;
-  sizeAges--;
-  printArray(allAges, sizeAges);
+  allAges[sizeArray] = 0;
+  sizeArray--;
+  printArray(allAges, sizeArray);
   
-  allAges[sizeAges] = num1;
-  printArray(allAges, sizeAges);
+  for (int i = sizeArray; i>0; i--) {
+    allAges[i] = allAges[i-1];
+  }
+  allAges[0] = num1;
+  //sizeArray = sizeArray + 1;
+  printArray(allAges, ++sizeArray);
   
-  allAges[sizeAges] = 0;
-  printArray(allAges, sizeAges);
-  return 0;
+  for (int i = 1; i<=sizeArray; i++) {
+    allAges[i-1] = allAges[i];
+  }
+  //sizeArray = sizeArray -1;
+  printArray(allAges, --sizeArray);
+
+
+  return allAges;
 }
 
 int main()
@@ -42,6 +50,9 @@ int main()
   int last = ages[length - 1];
   printf("first: %d\n", first);
   printf("last: %d\n", last);
-  int* z = addDelete(9, 21, ages, length);
-  cout << "The result is " << z << "\n";
+  int allAges[50] = {};  // standard of c++ doesn't allow allAges[length]
+
+  addDelete(9, 21, ages, length, allAges);
+  cout << "The result is: ";
+  printArray(allAges, length);
 }
