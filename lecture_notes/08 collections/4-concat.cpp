@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 
 int main() {
   int schoolAges[] = { 10, 12, 15, 15 };

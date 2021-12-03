@@ -10,3 +10,4 @@ studentAges = [17, 18, 18, 19, 20]
 ages = schoolAges + studentAges
 first, last = getFirstAndLast(ages)
 print({ 'first': first, 'last': last })
+
