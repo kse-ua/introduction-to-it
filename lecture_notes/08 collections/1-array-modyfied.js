@@ -16,4 +16,5 @@ console.log({ first, last });
 console.log(arrayForNewElements, 'filtered array');
 console.log(newSlicedArray, 'sliced array');
 console.log(newEmptyArray.join('-'), 'new empty array filed with "bang"');
-console.log(arrayWithGun.join('-'), ': new array maped from "bang" array with more powerful weapon');
+console.log(arrayWithGun.join('-'));
+console.log(': new array maped from "bang" array with more powerful weapon');
