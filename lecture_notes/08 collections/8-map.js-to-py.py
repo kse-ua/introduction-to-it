@@ -1,13 +1,13 @@
 dict = ['Vasia Pupkin', 'Marcus Aurelius']
 
-Names_IQ = {
+NamesIq = {
     'Vasia Pupkin': 19,
     'Marcus Aurelius': 1860,
 }
-print(Names_IQ)
+print(NamesIq)
 
-del Names_IQ['Vasia Pupkin']
-print(Names_IQ)
+del NamesIq['Vasia Pupkin']
+print(NamesIq)
 
 print('Vasia Pupckin' in dict,'Marcus Aurelius' in dict)
 
