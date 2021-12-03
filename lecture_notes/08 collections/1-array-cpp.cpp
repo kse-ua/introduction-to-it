@@ -14,7 +14,7 @@ int main() {
   ages[4] = 4;
   printf("new element: %d\n", ages[4]);
   printf("function elements: %d\n");
-  for(int i = 0; i < length; i++) {
+  for (int i = 0; i < length; i++) {
       cout << ages[i] << "\n";
   }
 }
