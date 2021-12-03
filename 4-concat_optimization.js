@@ -1,3 +1,4 @@
+'use strict';
 // Implementation
 
 const getFirstAndLast = (array) => ({
