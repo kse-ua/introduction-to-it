@@ -7,16 +7,16 @@ const last = ages[ages.length - 1];
 
 console.log({ first, last });
 
-const new_array = ages.reverse();
-console.log(new_array);
-new_array.pop();
-new_array.push("new last element");
-new_array.shift();
-new_array.unshift("new first element");
-console.log(new_array);
-console.log(new_array.filter(element => element > 16 || element === 12),"filtered array")
+const array_for_new_elements = ages.reverse();
+console.log(array_for_new_elements);
+array_for_new_elements.pop();
+array_for_new_elements.push("new last element");
+array_for_new_elements.shift();
+array_for_new_elements.unshift("new first element");
+console.log(array_for_new_elements);
+console.log(array_for_new_elements.filter(element => element > 16 || element === 12),"filtered array")
 
-const sliced_array = new_array.slice(1,5);
+const sliced_array = array_for_new_elements.slice(1,5);
 console.log(sliced_array);
 console.log(sliced_array.includes(18));
 
