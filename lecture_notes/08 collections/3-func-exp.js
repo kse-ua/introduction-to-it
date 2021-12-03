@@ -11,6 +11,6 @@ const get_first_and_last = (array) => ({
 
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 const { first, last } = get_first_and_last(ages);
-console.log({ first, last });
+console.log({ 'first': first, 'last': last});
 
 
