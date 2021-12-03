@@ -1,17 +1,15 @@
 ages = [10, 12, 15, 15, 17, 18, 18, 19, 20]
 
-first = ages[0]
-last = ages[-1]
+print({'ages': ages})
 
-print({ 'first': first, 'last': last })
+ages.extend([24, 27, 30])
 
-ages.insert(0, 6)
-shifted = ages[0]
+print({'extended ages': ages})
 
-print({ 'shifted': shifted })
+slice_of_ages = ages[1:8]
 
-for x in range(2):
-    ages.pop(0)
-unshifted = ages[0]
+print({'slice_of_ages': slice_of_ages})
 
-print({ 'unshifted': unshifted})
+ages.reverse()
+
+print({'reversed ages': ages})
