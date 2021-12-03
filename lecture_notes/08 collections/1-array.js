@@ -17,9 +17,7 @@ console.log(ages);
 
 ages.unshift(1);
 // add element to the beginning
-console.log(ages)
-;
-ages.shift(1);
+console.log(ages);
+ages.shift();
 // remove element from the beginning
-console.log(ages)
-;
+console.log(ages);
