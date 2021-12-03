@@ -10,20 +10,20 @@ console.log({ first, last });
 const arrayForNewElements = ages.reverse();
 console.log(arrayForNewElements);
 arrayForNewElements.pop();
-arrayForNewElements.push("new last element");
+arrayForNewElements.push('new last element');
 arrayForNewElements.shift();
-arrayForNewElements.unshift("new first element");
+arrayForNewElements.unshift('new first element');
 console.log(arrayForNewElements);
-console.log(arrayForNewElements.filter(element => element > 16 || element === 12),"filtered array")
+console.log(arrayForNewElements.filter(element => element > 16 || element === 12), 'filtered array')
 
-const newSlicedArray = arrayForNewElements.slice(1,5);
+const newSlicedArray = arrayForNewElements.slice(1, 5);
 console.log(newSlicedArray);
 console.log(newSlicedArray.includes(18));
 
 const newEmptyArray = new Array(5);
-newEmptyArray.fill("bang");
+newEmptyArray.fill('bang');
 console.log(newEmptyArray);
-console.log(newEmptyArray.join("-"));
+console.log(newEmptyArray.join('-'));
 
-const arrayWithGun = newEmptyArray.map(element => "bim" + element)
-console.log(arrayWithGun.join(""));
+const arrayWithGun = newEmptyArray.map(element => 'bim' + element)
+console.log(arrayWithGun.join(''));
