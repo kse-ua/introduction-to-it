@@ -9,4 +9,4 @@ schoolAges = [10, 12, 15, 15]
 studentAges = [17, 18, 18, 19, 20]
 ages = schoolAges + studentAges
 first, last = getFirstAndLast(ages)
-print({ 'first': first, 'last': last })
+print({ first, last })
