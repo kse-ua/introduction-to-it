@@ -1,0 +1,3 @@
+/Users/sample/Desktop/Code/introduction-to-it/lecture_notes/08 collections/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sample/Desktop/Code/introduction-to-it/lecture_notes/08 collections/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sample/Desktop/Code/introduction-to-it/lecture_notes/08 collections/cmake-build-debug/CMakeFiles/08_collections.dir
