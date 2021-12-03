@@ -11,6 +11,7 @@ def listPopFirstNLast(ages_new):
         ages.pop(0)
     print(ages)
     return
+
 def listReverseNPop(ages_new):
     ages = ages_new.copy()
     for i in range(len(ages)):
@@ -22,6 +23,7 @@ def listReverseNPop(ages_new):
         ages.reverse()
     print(ages)
     return
+
 def listElementsChanges(ages_new):
     ages = ages_new.copy()
     listOfElementsToAdd = [321,322]
@@ -33,12 +35,14 @@ def listElementsChanges(ages_new):
     ages.pop(-1)
     ages.remove(321)
     print(ages)
+
 def removeElementFromList(new_list,element):
     a = new_list.count(element)
     print(new_list)
     for i in range(a):
         new_list.remove(element)
         print(new_list)
+        
 def listCount(ages_new):
     ages = ages_new.copy()
     listOfElementsToAdd = [1234,33,1234,33,1233,33,23]
