@@ -1,6 +1,16 @@
-ages = [10, 12, 15, 15, 17, 18, 18, 19, 20]
+ages = {
+    'first': 10,
+    'second': 12,
+    'third': 15,
+    'fourth': 15,
+    'fifth': 17,
+    'sixth': 18,
+    'seventh': 18,
+    'eighth': 19,
+    'ninth': 20
+}
 
-first = ages[0]
-last = ages[-1]
+first = ages['first']
+last = ages['ninth']
 
-print({ 'first': first, 'last': last })
+print({"first": first, "last": last})
