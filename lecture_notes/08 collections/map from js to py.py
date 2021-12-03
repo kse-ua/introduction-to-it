@@ -1,13 +1,13 @@
-NamesIq = {
+names = {
     'Vasia Pupkin': 19,
     'Marcus Aurelius': 1860,
 }
-print(NamesIq)
+print(namesIq)
 
-del NamesIq['Vasia Pupkin']
-print(NamesIq)
+del names['Vasia Pupkin']
+print(names)
 
-print('Vasia Pupckin' in NamesIq, 'Marcus Aurelius' in NamesIq)
+print('Vasia Pupckin' in names, 'Marcus Aurelius' in names)
 
-NamesIq.clear()
-print(NamesIq)
+names.clear()
+print(names)
