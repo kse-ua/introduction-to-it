@@ -14,7 +14,7 @@ arrayForNewElements.push('new last element');
 arrayForNewElements.shift();
 arrayForNewElements.unshift('new first element');
 console.log(arrayForNewElements);
-console.log(arrayForNewElements.filter(element => element > 16 || element === 12), 'filtered array');
+console.log(arrayForNewElements.filter((element) => element > 16 || element === 12), 'filtered array');
 
 const newSlicedArray = arrayForNewElements.slice(1, 5);
 console.log(newSlicedArray);
@@ -25,5 +25,5 @@ newEmptyArray.fill('bang');
 console.log(newEmptyArray);
 console.log(newEmptyArray.join('-'));
 
-const arrayWithGun = newEmptyArray.map(element => 'bim' + element);
+const arrayWithGun = newEmptyArray.map((element) => 'bim' + element);
 console.log(arrayWithGun.join(''));
