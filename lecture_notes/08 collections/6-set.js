@@ -1,17 +1,13 @@
-'use strict';
+ages = {10, 12, 15, 15, 17, 18, 18, 19, 20}  # set
 
-const ages = new Set([10, 12, 15, 15, 17, 18, 18, 19, 20]);
-console.log({ ages });
+ages.add(16)
+ages.discard(20)
 
-ages.add(16);
-ages.delete(20);
-
-console.log({
-  10: ages.has(10),
-  16: ages.has(16),
-  19: ages.has(19),
-  20: ages.has(20),
-});
-
-ages.clear();
-console.log({ ages });
+print('10:', 10 in ages,
+      '16:', 16 in ages,
+      '19:', 19 in ages,
+      '20:', 20 in ages)
+# true
+# true
+# true
+# false
