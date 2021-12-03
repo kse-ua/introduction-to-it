@@ -18,5 +18,4 @@ const concat = (arr1, arr2) => {
 const schoolAges = [10, 12, 15, 15];
 const studentAges = [17, 18, 18, 19, 20];
 const ages = concat(schoolAges, studentAges);
-const { first, last } = getFirstAndLast(ages);
-console.log({ first, last });
+console.log(getFirstAndLast(ages));
