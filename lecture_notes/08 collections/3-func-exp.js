@@ -3,7 +3,7 @@
 
 //use lambda instead
 const getFirstAndLast = (array) => ({
-  
+
   first: array[0],   // the same
   // in python use [number of last]
   last: array[array.length - 1],
