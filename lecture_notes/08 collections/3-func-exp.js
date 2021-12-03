@@ -1,4 +1,5 @@
 'use strict';
+
 // Implementation
 
 //use lambda instead
