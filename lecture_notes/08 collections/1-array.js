@@ -2,7 +2,7 @@
 
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 
-let newElement1 = 5, newElement2 = 10;
+const newElement1 = 5, newElement2 = 10;
 ages.pop();
 ages.push(newElement1, newElement2);
 ages.shift();
