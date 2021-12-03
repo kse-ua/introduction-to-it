@@ -2,18 +2,18 @@
 
 // Implementation
 
-//use lambda instead
+// Use lambda instead
 const getFirstAndLast = (array) => ({
-  first: array[0],   // the same
-  // in python use [number of last]
+  first: array[0], // The same
+  // In python use [number of last]
   last: array[array.length - 1],
 });
 
 // Usage
 
-// the same
+// The same
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
-// the same
+// The same
 const { first, last } = getFirstAndLast(ages);
-// in python 'console.log'
+// In python 'console.log'
 console.log({ first, last });
