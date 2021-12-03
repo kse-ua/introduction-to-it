@@ -13,8 +13,6 @@ for dict in flights:
     if dict not in directions:
         directions.append(dict)
         
-print("_")
+print("--------------------------------")
 for dict in directions:
     print(dict)
-
-
