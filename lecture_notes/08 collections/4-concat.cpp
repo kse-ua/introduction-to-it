@@ -1,7 +1,7 @@
 using namespace std;
 #include <iostream>
 
-int* concat_array(int array1[], int array2[], int firstLength, int secondLength){
+void concat_array(int array1[], int array2[], int firstLength, int secondLength){
     int length = firstLength + secondLength;
     int new_array[length];
 
