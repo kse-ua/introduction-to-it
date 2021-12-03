@@ -6,8 +6,7 @@ void sumarray(int length,int array1[]){
     int last = array1[length-1];
     std::cout << "First: ";
     printf("%d",first);
-    std::cout << " ";
-    std::cout << "Last: ";
+    std::cout << "\nLast: ";
     printf("%d",last);
   }
 int main() {
