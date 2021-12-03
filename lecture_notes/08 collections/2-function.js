@@ -2,7 +2,7 @@
 
 // Implementation
 
-const getFirstAndLast = (array) => {
+const get_first_and_last = (array) => {
   const first = array[0];
   const last = array[array.length- 1];
   return { first, last };
@@ -11,6 +11,6 @@ const getFirstAndLast = (array) => {
 // Usage
 
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
-const { first, last } = getFirstAndLast(ages);
+const { first, last } = get_first_and_last(ages);
 console.log({ first, last });
 
