@@ -1,8 +1,8 @@
 'use strict';
 
 const getFirstAndLast = (array) => ({
-    first: array[0],
-    last: array[array.length - 1],
+  first: array[0],
+  last: array[array.length - 1],
 });
 
 const schoolAges = [10, 12, 15, 15];
