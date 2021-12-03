@@ -10,7 +10,7 @@ void sumarray(int length, int array1[]){
     printf("%d", last);
 }
 int main() {
-   int ages[] = {10, 12, 15, 15, 17, 18, 18, 19, 20};
-   int length = sizeof(ages) / sizeof(int);
-   sumarray(length, ages);
+    int ages[] = {10, 12, 15, 15, 17, 18, 18, 19, 20};
+    int length = sizeof(ages) / sizeof(int);
+    sumarray(length, ages);
 }
