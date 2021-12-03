@@ -5,13 +5,13 @@ last = ages[-1]
 
 print({ 'first': first, 'last': last })
 
-ages.append(24)
-pushed = ages[-1]
+ages.insert(0, 6)
+shifted = ages[0]
 
-print({ 'pushed': pushed})
+print({ 'shifted': shifted })
 
 for x in range(2):
-    ages.pop(-1)
-popped = ages[-1]
+    ages.pop(0)
+unshifted = ages[0]
 
-print({ 'popped': popped})
+print({ 'unshifted': unshifted})
