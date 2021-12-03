@@ -14,8 +14,7 @@ arrayForNewElements.push('new last element');
 arrayForNewElements.shift();
 arrayForNewElements.unshift('new first element');
 console.log(arrayForNewElements);
-arrayForNewElements.filter((element) =>
-  element > 16 || element === 12);
+arrayForNewElements.filter((element) => element > 16 || element === 12);
 console.log(arrayForNewElements, 'filtered array');
 const newSlicedArray = arrayForNewElements.slice(1, 5);
 console.log(newSlicedArray);
