@@ -26,9 +26,9 @@ def listReverseNPop(ages_new):
 
 def listElementsChanges(ages_new):
     ages = ages_new.copy()
-    listOfElementsToAdd = [321,322]
+    listOfElementsToAdd = [321, 322]
     ages.extend(listOfElementsToAdd)
-    ages.insert(4,"mamamia")
+    ages.insert(4, "mamamia")
     ages.sort
     print(ages)
     ages.pop(4)
