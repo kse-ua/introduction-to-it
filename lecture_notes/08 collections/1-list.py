@@ -4,3 +4,14 @@ first = ages[0]
 last = ages[-1]
 
 print({ 'first': first, 'last': last })
+
+ages.append(24)
+pushed = ages[-1]
+
+print({ 'pushed': pushed})
+
+for x in range(2):
+    ages.pop(-1)
+popped = ages[-1]
+
+print({ 'popped': popped})
