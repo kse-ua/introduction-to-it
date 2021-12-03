@@ -7,4 +7,4 @@ const wholeSet = schoolAges.concat(studentAges);
 const first = wholeSet[0];
 const last = wholeSet[array.length - 1];
 
-console.log({first, last});
+console.log( {first, last} );
