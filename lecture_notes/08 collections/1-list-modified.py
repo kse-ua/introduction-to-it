@@ -2,7 +2,7 @@ ages = [10, 12, 15, 15, 17, 18, 18, 19, 20]
 
 def listPopFirstNLast(ages_new):
     ages = ages_new.copy()
-    for i in range(int(len(ages))//2):
+    for i in range(len(ages)//2):
         first = ages[0]
         last = ages[-1]
         print({ first, last })
