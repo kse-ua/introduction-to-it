@@ -1,34 +1,19 @@
-def distinct(dataset: list):
-    filtered = dict()
-
-    # FOR FANCY ONES
-    # if you were wondering how to apply lambda
-    # HERE YOU GO!
-    # dataset.sort(key=lambda direction: direction["from"])
+def distinct(dataset):
+    directions = list()
 
     for record in dataset:
-        departure, arrival = record["from"], record["to"]
-        empty = filtered.setdefault(departure, True)
+        has = (record in directions)
+        if not has:
+            directions.append(record)
 
-        if empty == True:
-            filtered[departure] = set()
+    return directions
 
-        # We always add, because values of dict filtered
-        # are sets :)
-        filtered[departure].add(arrival)
-
-    result = list()
-    for departure, arrivals in filtered.items():
-
-        for arrival in arrivals:
-            result.append(
-                {"from": departure, "to": arrival}
-            )
-
-    return result
+# doesn't work with dict-elements unfortunately
+def distinct1(dataset):
+    return list(set(dataset))
 
 
-# // Usage
+# Usage
 flights = [
     {"from": 'Kiev', "to": 'Rome'},
     {"from": 'Kiev', "to": 'Warsaw'},
@@ -38,7 +23,7 @@ flights = [
     {"from": 'Cairo', "to": 'Paris'},
 ]
 
-directions = distinct(flights)
+filtered = distinct(flights)
 
-for direction in directions:
+for direction in filtered:
     print(direction)
