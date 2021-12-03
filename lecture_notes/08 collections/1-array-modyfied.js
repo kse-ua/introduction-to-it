@@ -5,7 +5,7 @@ const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 const first = ages[0];
 const last = ages[ages.length - 1];
 const arrayForNewElements = ages.reverse();
-const newFilterdArray = arrayForNewElements.filter((element) => element > 16 || element === 12);
+const newFilterdArray = arrayForNewElements.filter((element) => element > 16);
 
 const newSlicedArray = arrayForNewElements.slice(1, 5);
 const newEmptyArray = new Array(5);
