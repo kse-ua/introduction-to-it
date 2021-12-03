@@ -1,21 +1,16 @@
-'use strict';
+ages = {}
 
-const ages = new Map();
+ages["Vasia Pupkin"] = 19
+ages["Marcus Aurelius"] = 1860
+print(ages)
 
-ages.set('Vasia Pupkin', 19);
-ages.set('Marcus Aurelius', 1860);
-console.log({ ages });
+ages["Vasia Pupkin"] = 20
+print(ages)
 
-ages.set('Vasia Pupkin', 20);
-console.log({ ages });
+ages.pop("Vasia Pupkin")
+print(ages)
 
-ages.delete('Vasia Pupkin');
-console.log({ ages });
+print(f"Vasia Pupkin: {'Vasia Pupkin' in ages}, Marcus Aurelius: {'Marcus Aurelius' in ages}")
 
-console.log({
-  'Vasia Pupkin': ages.has('Vasia Pupkin'),
-  'Marcus Aurelius': ages.has('Marcus Aurelius'),
-});
-
-ages.clear();
-console.log({ ages });
+ages.clear()
+print("Prints an open dictionary: ", ages)
