@@ -1,8 +1,9 @@
-'use strict';
+"use strict";
 
 const ages = [10, 12, 15, 15, 17, 18, 18, 19, 20];
 
-const firstElement = 5, secondElement = 10;
+const firstElement = 5,
+  secondElement = 10;
 ages.pop();
 ages.push(firstElement, secondElement);
 ages.shift();
