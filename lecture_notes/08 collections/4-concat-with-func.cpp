@@ -20,5 +20,4 @@ int main() {
   int schoolLength = sizeof(schoolAges) / sizeof(int);
   int studentLength = sizeof(studentAges) / sizeof(int);
   sumArray(schoolLength, studentLength, schoolAges, studentAges);
-
 }
