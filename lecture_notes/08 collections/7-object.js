@@ -1,18 +1,15 @@
-'use strict';
+ages = {'Vasia Pupkin': 19,
+        'Marcus Aurelius': 1860
+}
+print({'ages': ages})
 
-const ages = {
-  'Vasia Pupkin': 19,
-  'Marcus Aurelius': 1860,
-};
-console.log({ ages });
+ages['Vasia Pupkin'] = 20
+print({'ages': ages})
 
-ages['Vasia Pupkin'] = 20;
-console.log({ ages });
+ages.pop('Vasia Pupkin')
+print({'ages': ages})
 
-Reflect.deleteProperty(ages, 'Vasia Pupkin');
-console.log({ ages });
+print('Vasia Pupkin:', 'Vasia Pupkin' in ages, "  " 'Marcus Aurelius:', 'Marcus Aurelius' in ages)
 
-console.log({
-  'Vasia Pupkin': Reflect.has(ages, 'Vasia Pupkin'),
-  'Marcus Aurelius': Reflect.has(ages, 'Marcus Aurelius'),
-});
+ages = {}
+print({'ages': ages})
