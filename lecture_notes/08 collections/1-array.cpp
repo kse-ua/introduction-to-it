@@ -1,13 +1,13 @@
 #include <stdio.h>
+#include <vector>
 
 int main() {
-  int ages[] = { 10, 12, 15, 15, 17, 18, 18, 19, 20 };
+  std::vector<int> ages_1 = { 10, 12, 15, 15, 17, 18, 18, 19, 20 };
+  ages_1.pop_back();
+  ages_1.push_back(3);
+  ages_1.insert(ages_1.begin(),3);
 
-  int first = ages[0];
-  int length = sizeof(ages) / sizeof(ages[0]);
-  int last = ages[length - 1];
 
-
-  printf("first: %d\n", first);
-  printf("last: %d\n", last);
+  printf("first: %d\n", ages_1.at(0));
+  printf("last: %d\n", ages_1.at(ages_1.size() - 1));
 }
