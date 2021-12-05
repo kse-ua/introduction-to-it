@@ -3,7 +3,7 @@
 const move = ({ dx, dy }) => ({ x, y }) => ({ x: x + dx, y: y + dy });
 
 const conditionalParse = (item) =>
-  typeof item === 'string' ? JSON.parse(item) : item;
+  (typeof item === 'string' ? JSON.parse(item) : item);
 
 const polyline = [
   { x: 0, y: 0 },
