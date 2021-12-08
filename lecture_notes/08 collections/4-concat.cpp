@@ -22,8 +22,9 @@ int main() {
   int schoolLength = sizeof(schoolAges) / sizeof(int);
   int studentLength = sizeof(studentAges) / sizeof(int);
   int length = schoolLength + studentLength;
+  int *ages;
 
-  int ages[length] = concat(schoolAges, studentAges, schoolLength, studentLength);
+  ages = concat(schoolAges, studentAges, schoolLength, studentLength);
 
   for (int i = 0; i < length; i++) {
     printf("ages[%d]: %d\n", i, ages[i]);
