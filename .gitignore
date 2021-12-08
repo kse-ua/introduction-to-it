@@ -1,6 +1,21 @@
+<<<<<<< HEAD
 .idea*
 .json*
 .exe*
 .vscode/tasks.json
 .vscode/launch.json
 lecture_notes/08 collections/1-array.exe
+=======
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+.idea*
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/launch.json
+>>>>>>> f7cda2f3851901808c908a9dc7ba06e68d542b35

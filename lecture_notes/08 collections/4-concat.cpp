@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-  int schoolAges[] = { 10, 12, 15, 15 };
-  int studentAges[] = { 17, 18, 18, 19, 20 };
+  int schoolAges[] = {10, 12, 15, 15};
+  int studentAges[] = {17, 18, 18, 19, 20};
 
   int schoolLength = sizeof(schoolAges) / sizeof(int);
   int studentLength = sizeof(studentAges) / sizeof(int);
