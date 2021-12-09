@@ -13,4 +13,4 @@ def calculateTotal(prices):
 purchase = [1500, 100, 10, 50]
 total = calculateTotal(purchase)
 if total <= MAX_PURCHASE:
-  print(total)
+  print({ 'total': total })
