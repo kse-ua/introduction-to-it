@@ -30,13 +30,13 @@
 8. [Колекції](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/08%20functions/README.md)
 9. [Функції](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/09%20functions/README.md)
 
-|Номер роботи|Максимальна кількість балів|Soft deadline|Hard deadline|
-|:----------:|:-------------------------:|-------------|-------------|
-|1|5|25.09 |2.10 |
-|2|5|11.10 |18.10 |
-|3|5|25.10 |25.10 |
-|7|30| | |
-|8|30| | |
-|9|30| | |
-|10|30| | |
-|11|30| | |
+|  # | Lecture     | Max | Soft deadline | Hard deadline |
+|---:|-------------|----:|---------------|---------------|
+|  1 |             |   5 |         25.09 |          2.10 |
+|  2 |             |   5 |         11.10 |         18.10 |
+|  3 |             |   5 |         25.10 |         25.10 |
+|  7 | Basics      |  30 |         26.11 |          3.12 |
+|  8 | Collections |  30 |         03.12 |          3.12 |
+|  9 | Functions   |  30 |         12.12 |         17.12 |
+| 10 | Refactoring |  30 |         17.12 |         24.12 |
+| 11 | Review      |  30 |         24.12 |         24.12 |
