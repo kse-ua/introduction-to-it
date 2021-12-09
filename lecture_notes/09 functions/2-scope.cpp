@@ -48,10 +48,12 @@ void f1() {
          cout << cities[i] << std::endl;
     }
 
-    string cities2[] = {'London', 'Beijing', 'Kiev'}
+    string cities2[] = {"London", "Beijing", "Kiev"};
     int lenght2 = sizeof(cities2) / sizeof(string);
-    int* lenght_cities = f(cities2, lenght2)
-
+    int* lenght_cities = f(cities2, lenght2);
+    for (int i = 0; i < lenght2; i++) {
+         cout << lenght_cities[i] << std::endl;
+    }
 }
 
 
@@ -60,8 +62,8 @@ int main()
     f1();
     // console.dir(cities.map(f))
     int* map = f(cities, cities_lenght);
-    // for (int i = 0; i < cities_lenght; i++) {
-    //     cout << map[i];
-    // };
+    for (int i = 0; i < cities_lenght; i++) {
+         cout << map[i] << std::endl;
+    }
     return 0;
 };
