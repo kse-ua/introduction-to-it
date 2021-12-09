@@ -1,6 +1,6 @@
 'use strict';
 
-const movePoints = (offset, points) => {
+const shift = (offset, points) => {
   const moved = points.map((point) => {
     const type = typeof point;
     if (type === 'object') {
@@ -23,5 +23,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const path = movePoints({ x: 10, y: -5 }, polyline);
+const path = shift({ x: 10, y: -5 }, polyline);
 console.log({ path });
