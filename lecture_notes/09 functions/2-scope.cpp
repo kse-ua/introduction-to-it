@@ -47,13 +47,15 @@ void f1() {
          cities[i] = lower(cities[i]);
          cout << cities[i] << std::endl;
     }
-
-    string cities2[] = {"London", "Beijing", "Kiev"};
-    int lenght2 = sizeof(cities2) / sizeof(string);
-    int* lenght_cities = f(cities2, lenght2);
-    for (int i = 0; i < lenght2; i++) {
-         cout << lenght_cities[i] << std::endl;
+    
+    {
+        string cities[] = {"London", "Beijing", "Kiev"};
+        int lenght = sizeof(cities) / sizeof(string);
+        int* lenght_cities = f(cities, lenght);
+        for (int i = 0; i < lenght; i++) {
+            cout << lenght_cities[i] << std::endl;
     }
+    } 
 }
 
 
