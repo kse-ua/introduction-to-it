@@ -5,16 +5,14 @@ string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
 int length = sizeof(cities)/sizeof(string);
 
 string toUpperCase(string s){
-    for(int i = 0; i < s.length(); i++)
-    {
+    for(int i = 0; i < s.length(); i++){
         s[i] = toupper(s[i]);
     }
     return s;
 }
 
 string toLowerCase(string s){
-    for(int i = 0; i < s.length(); i++)
-    {
+    for(int i = 0; i < s.length(); i++){
         s[i] = tolower(s[i]);
     }
     return s;
