@@ -8,10 +8,9 @@ cache = {}  # dictionary
 
 def addProcedure(a, b):
     key = str(a) + ',' + str(b)
-    if cache == {}:
-        res = cache.fromkeys(key)  # create a dictionary with a key
-    else:
-        res = cache
+    res = cache
+    if res == {}:
+         res = cache.fromkeys(key)
     if res.get(key[0]) != None:
         return res.get(key[0])  # returns the value of the key, but if there is none, then None
     res = a + b
