@@ -11,13 +11,11 @@ map <string, int> cache;
 
 int addProcedure(int a, int b) {
     string key = to_string(a) + ", " +to_string(b);
-    int res;
-    cache.insert(pair <string, int>(key, res));
-    if (res) {
-        return res;
-        }
-    res = a + b;
-    cache.insert(pair <string, int>(key, res));
+    if (cache.count(key) == 1) {
+        return cache[key];
+    }
+    int res = a + b;
+    cache[key] = res;
     return res;
 }
 
@@ -32,3 +30,5 @@ int main () {
     printf("%d\n", addProcedure(100, 200));
     // somehow print cache
 }
+
+// the code is actually not working properly

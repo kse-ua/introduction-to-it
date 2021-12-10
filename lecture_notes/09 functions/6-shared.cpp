@@ -7,22 +7,20 @@ map <string, int> cache;
 
 int addProcedure(int a, int b) {
     string key = to_string(a) + ", " +to_string(b);
-    int res;
-    cache.insert(pair <string, int>(key, res)); // meed to understand if it correct
-    if (cache.empty()) {
-        res = a + b;
-        cache.insert(pair <string, int>(key, res));
-        };
+    if (cache.count(key) == 1) {
+        return cache[key];
+    }
+    int res = a + b;
+    cache[key] = res;
     return res;
 }
 
 int subProcedure(int a, int b) {
     string key = to_string(a) + ", " +to_string(b);
-    int res = cache[key];
-    if (res) { // actually has no meaning
-        return res;
-        }
-    res = a - b;
+    if (cache.count(key) == 1) {
+        return cache[key];
+    }
+    int res = a - b;
     cache[key] = res;
     return res;
 }
@@ -30,6 +28,7 @@ int subProcedure(int a, int b) {
 int main() {
     printf("sub: %d\n", subProcedure(5, 2));
     printf("add: %d\n", addProcedure(5, 2));  
+    printf("cache: %d\n", cache);
 }
 
 // the code is actually not working properly
