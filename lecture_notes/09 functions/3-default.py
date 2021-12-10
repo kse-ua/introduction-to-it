@@ -1,4 +1,4 @@
-def max(x = 0,y = 0):
+def max(x = 0, y = 0):
     if x > y:
         return x
     elif x < y:
@@ -7,4 +7,4 @@ def max(x = 0,y = 0):
         print("equal")
         return
     
-print(max(10,20),max(10),max(-20))
+print(max(10, 20), max(10), max(-20))
