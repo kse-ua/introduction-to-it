@@ -28,7 +28,6 @@ int subProcedure(int a, int b) {
 int main() {
     printf("sub: %d\n", subProcedure(5, 2));
     printf("add: %d\n", addProcedure(5, 2));  
-    printf("cache: %d\n", cache);
 }
 
 // the code is actually not working properly
