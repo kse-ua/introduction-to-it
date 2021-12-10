@@ -7,20 +7,17 @@ def f1():
 
     print(cities)
     # result = map(f, cities)
-    print([f(x) for x in cities])
+    print(list(map(f, cities)))
     
     f = lambda s : s.lower()
-    print([f(x) for x in cities])
-
+    print(list(map(f, cities)))
 
     def another(): 
         cities = ['London', 'Beijing', 'Kiev']
-        print([f(x) for x in cities]) # how to get the first upper func
+        print(list(map(f, cities))) # how to get the first upper func
 
     another()
 
-    print(map(another, cities))  # why it is not working???
-
 f1()
 print(cities)
-print([f(x) for x in cities])
+print(list(map(f, cities)))
