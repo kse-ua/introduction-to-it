@@ -1,16 +1,19 @@
+
 #include <iostream> // input and output info from out code
 using namespace std;  // Declaring on a global level
 
 void mainOutput() {
     string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
 
-    for (int i = 0; i < 5; i++) { cout << cities[i].size() << endl; }
+    for (int i = 0; i < 5; i++) { cout << cities[i].size() << " ";  }
 
 }
 
 int main() {
     mainOutput();
 
+    cout << endl;
+    
     string FirstCities[] = {"Athens", "Roma"};
 
     for (auto & citie : FirstCities) {
@@ -36,5 +39,3 @@ int main() {
 
     return 0;
 }
-
-
