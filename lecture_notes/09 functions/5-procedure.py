@@ -7,7 +7,7 @@ cache = {}  # dictionary
 
 
 def addProcedure(a, b):
-    key = [str(a) + ',' + str(b)]
+    key = str(a) + ',' + str(b)
     if cache == {}:
         res = cache.fromkeys(key)  # create a dictionary with a key
     else:
