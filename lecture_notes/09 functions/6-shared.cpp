@@ -35,7 +35,7 @@ int subProcedure (int a, int b) {
 
 
 int main(){
-    printf("%d\n", subProcedure(5, 2));
-    printf("%d\n", addProcedure(5, 2));
+    printf("sub: %d\n", subProcedure(5, 2));
+    printf("add: %d\n", addProcedure(5, 2));
     return 0;
 }
