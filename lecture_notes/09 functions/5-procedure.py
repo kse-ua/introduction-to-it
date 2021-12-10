@@ -8,6 +8,9 @@ cache = {}
 
 def addProcedure(a, b):
     key = f'{a}, {b}'
+    res = cache[key] = None
+    if res is not None:
+        return res
     res = a + b
     cache[key] = res
     return res
