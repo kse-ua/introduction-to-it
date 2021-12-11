@@ -4,6 +4,7 @@ using namespace std;
 string cities[] = { "Athens", "Roma", "London", "Beijing", "Kiev", "Riga" };
 int length = sizeof(cities) / sizeof(string);
 
+// To print cities
 void print_cities(string cities[], int length) {
 
     cout << "[ ";
@@ -13,6 +14,7 @@ void print_cities(string cities[], int length) {
     cout << "]" << endl;
 }
 
+// To print cities length
 void print_cities_length() {
 
     print_cities(cities, length);
@@ -23,6 +25,7 @@ void print_cities_length() {
     cout << "]" << endl;
 }
 
+// To transform string by letter
 string to_upper(string city) {
 
     for (int letter = 0; letter < city.length(); letter++) {
@@ -32,6 +35,7 @@ string to_upper(string city) {
     return city;
 }
 
+// To transform string by letter
 string to_lower(string city) {
 
     for (int letter = 0; letter < city.length(); letter++) {
@@ -41,6 +45,7 @@ string to_lower(string city) {
     return city;
 }
 
+// Main func
 void transform() {
 
     string cities[] = { "Athens", "Roma" };
@@ -73,6 +78,7 @@ void transform() {
     }
 }
 
+// Output in console
 int main() {
 
     transform();
