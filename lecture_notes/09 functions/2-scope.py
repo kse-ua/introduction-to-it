@@ -5,18 +5,21 @@ def f(s):
 def f1():
     cities = ['Athens', 'Roma']
     f = lambda s: s.upper()
-    
+
     print(cities)
     print(list(map(f, cities)))
 
-    f = lambda s: s.lower()
-    print(cities)
-    print(list(map(f, cities)))
+    def lowerCities():
+        f = lambda s: s.lower()
+        print(cities)
+        print(list(map(f, cities)))
+    lowerCities()
 
-    f = lambda s: s.upper()
-    cities = ['London', 'Beijing', 'Kiev']
-    print(cities)
-    print(list(map(f, cities)))
+    def upperCities():
+        cities = ['London', 'Beijing', 'Kiev']
+        print(cities)
+        print(list(map(f, cities)))
+    upperCities()
 
 f1()
 
