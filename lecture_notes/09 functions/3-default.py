@@ -5,4 +5,4 @@ def maximum(a=0, b=0):
         return b
 
 
-print(maximum(-20))
+print([maximum(10, 20), maximum(-20)])
