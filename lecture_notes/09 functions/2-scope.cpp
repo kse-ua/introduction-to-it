@@ -1,7 +1,7 @@
+#include <iostream>
+using namespace std;
 
-#include <iostream> // input and output info from out code
-using namespace std;  // Declaring on a global level
-
+// Function that calculates len of each element in array
 void mainOutput() {
     string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
 
@@ -10,10 +10,6 @@ void mainOutput() {
 }
 
 int main() {
-    mainOutput();
-
-    cout << endl;
-    
     string FirstCities[] = {"Athens", "Roma"};
 
     for (auto & citie : FirstCities) {
@@ -36,6 +32,9 @@ int main() {
         transform(citie.begin(), citie.end(), citie.begin(), ::toupper);
         cout << citie << endl;
     }
+
+    cout << endl;
+    mainOutput();
 
     return 0;
 }
