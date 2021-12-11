@@ -5,13 +5,10 @@ def catchRest(args):
 catchRest([1, 2, 3])
 
 
-def ObjTypes(args):
+def f2(args):
     for arg in args:
         print('Type:', type(arg))
         print('Value: ', arg)
 
 
-args = [1, 'Marcus', {'field': 'value'}]
-
-
-ObjTypes(args)
+f2([1, 'Marcus', {'field': 'value'}])
