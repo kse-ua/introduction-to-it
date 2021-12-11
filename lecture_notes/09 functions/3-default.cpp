@@ -1,7 +1,7 @@
 using namespace std;
 #include <iostream>
 
-int max(int a = 0, int b = 0){
+int max(int a = 0, int b = 0) {
     return a > b ? a : b;
 }
 
