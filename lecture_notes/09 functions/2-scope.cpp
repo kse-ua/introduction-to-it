@@ -4,21 +4,21 @@ using namespace std;
 string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
 int length = sizeof(cities)/sizeof(string);
 
-string toUpperCase(string s){
+string toUpperCase(string s) {
     for(int i = 0; i < s.length(); i++){
         s[i] = toupper(s[i]);
     }
     return s;
 }
 
-string toLowerCase(string s){
+string toLowerCase(string s) {
     for(int i = 0; i < s.length(); i++){
         s[i] = tolower(s[i]);
     }
     return s;
 }
 
-void printArray(string s[], int length){
+void printArray(string s[], int length) {
     cout << "[ ";
     for(int i = 0; i < length; i++){
         cout << s[i] << ' ';
@@ -26,15 +26,15 @@ void printArray(string s[], int length){
     cout << "] " << endl;
 }
 
-void f1(){
+void f1() {
     string cities[] = {"Athens", "Roma"};
     int length = sizeof(cities)/sizeof(string);
     string upperCities[length];
     string lowerCities[length];
-    for(int i = 0; i < length; i++){
+    for(int i = 0; i < length; i++) {
         upperCities[i] = toUpperCase(cities[i]);
     }
-    for(int i = 0; i < length; i++){
+    for(int i = 0; i < length; i++) {
         lowerCities[i] = toLowerCase(cities[i]);
     }
 
@@ -48,7 +48,7 @@ void f1(){
         string cities[] = {"London", "Beijing", "Kiev"};
         length = sizeof(cities)/sizeof(string);
         string upperCities[length];
-        for(int i = 0; i < length; i++){
+        for(int i = 0; i < length; i++) {
             upperCities[i] = toUpperCase(cities[i]);
         }
         printArray(cities, length);
