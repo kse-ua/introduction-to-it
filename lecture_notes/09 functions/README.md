@@ -9,6 +9,7 @@
 - Create branch `lab-9`
 - Open directory `introduction-to-it/lecture_notes/09 function`
 - Translate `2-scope.js` to C++ and Python (max grade +7)
+
 - Translate `3-default.js` to C++ and Python (max grade +3)
 - Translate `4-rest.js` to C++ and Python (max grade +10)
 - Translate `5-procedure.js` to C++ and Python (max grade +5)

@@ -9,8 +9,7 @@
     "ecmaVersion": 2020
   },
   "globals": {
-    "BigInt": true,
-    "Metacom": true
+    "BigInt": true
   },
   "rules": {
     "indent": ["error", 2],
@@ -99,7 +98,7 @@
     "space-before-function-paren": [
       "error",
       {
-        "anonymous": "never",
+        "anonymous": "always",
         "named": "never",
         "asyncArrow": "always"
       }

@@ -5,7 +5,9 @@
   with github web UI
   - Use `Fetch upstream` -> `Fetch and merge`
   - Open your fork cloned to PC, switch to `main` branch and use `git pull` to
-    get all updatef from github server
+
+    get all updates from github server
+
 - Create branch `lab-11`
 - Open directory `introduction-to-it/lecture_notes/11 review`
 - Find your task: `id-task.py`
