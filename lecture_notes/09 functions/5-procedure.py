@@ -5,13 +5,11 @@ def addFunction(a, b):
 cache_n = {}
 def addProcedure(a, b):
     global cache_n
-    """
     key = str(a) + " + " + str(b)
-    if type(cache_n[key]) == int:
+    if key in cache_n:
         return cache_n[key]
-    """
     res = a + b
-    cache_n["a + b"] = res
+    cache_n[key] = res
     return res
 
 
