@@ -1,10 +1,10 @@
-# include <iostream>
+#include <iostream>
 
-int max(int a = 0, int b = 0){
+int max(int a = 0, int b = 0) {
     return a > b ? a : b;
 }
 
-int main(){
+int main() {
     int a = max(10, 20);
     printf("%d, ", a);
     int b = max(10);
