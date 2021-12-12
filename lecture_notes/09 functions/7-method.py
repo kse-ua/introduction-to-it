@@ -1,13 +1,11 @@
-class counter:
-    def __init__(self, value, x):
-        self.value = value
-        self.x = x
-    def inc(self):
-        self.value += self.x
-        return self.value
+class Counter:
+    def __init__(self):
+        self.value = 0
+    def inc(self, x):
+        self.value += x
 
-c = counter(0, 10)
-print(c.inc())
-
-c = counter(0, 20)
-print(c.inc())
+counter = Counter()
+counter.inc(10)
+print(counter.value)
+counter.inc(20)
+print(counter.value)
