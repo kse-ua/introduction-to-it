@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int ages[] = {10, 12, 15, 15, 17, 18, 18, 19, 20};
 
     int first = ages[0];
