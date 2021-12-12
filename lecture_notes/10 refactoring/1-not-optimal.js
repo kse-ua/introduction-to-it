@@ -1,6 +1,6 @@
 'use strict';
 
-let movePoints = (offset, points) => {
+let shift = (offset, points) => {
   points.forEach((point) => {
     const type = typeof point;
     if (type === 'object') {
@@ -23,5 +23,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-movePoints({ x: 10, y: -5 }, polyline);
+shift({ x: 10, y: -5 }, polyline);
 console.log({ polyline });
