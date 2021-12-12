@@ -5,23 +5,19 @@ def f(s):
 
 def f1():
     cities = ['Athens', 'Roma']
-    def f(s): 
+    def f_u(s): 
       return s.upper()
-    print(cities)
-    pr = map(f, cities)
+    pr = map(f_u, cities)
     print(list(pr))  
     # listToStr = ' '.join([str(elem) for elem in cities])
-    def f(s):
+    def f_l(s):
         return s.lower()
-    pr = map(f, cities)
+    pr = map(f_l, cities)
     print(list(pr))  
     cities = ['London', 'Beijing', 'Kiev']
-    print(cities)
-    pr = map(f, cities)
+    pr = map(f_u, cities)
     print(list(pr))  
-
 
 
 f1()
-print(cities)
 print(f(cities))
