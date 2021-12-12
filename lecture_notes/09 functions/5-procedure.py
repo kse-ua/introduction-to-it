@@ -3,7 +3,6 @@ def addFunction(a, b):
     return res
 
 cache_n = {}
-# """
 def addProcedure(a, b):
     global cache_n
     """
@@ -25,7 +24,3 @@ print([addProcedure(10, 20),
   addProcedure(1, 2),
   addProcedure(100, 20),
   addProcedure(100, 200)])
-"""
-d = {'10 +2': 12}
-print(d.keys)
-"""
