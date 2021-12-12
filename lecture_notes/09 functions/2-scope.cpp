@@ -16,13 +16,9 @@ int f1(char s[])
     return length;
 }
 
-
-
-void f1(){
+void f1() {
     char cities[][7] = {'Athens', 'Roma'};
-
 }
-
 
 int main() {
     char cities[][16] = {'Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'};
