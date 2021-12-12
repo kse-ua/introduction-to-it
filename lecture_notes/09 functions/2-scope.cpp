@@ -4,8 +4,7 @@
 using namespace std;
 
 
-int f(char s[])
-{
+int f(char s[]) {
     int length = sizeof(s) / sizeof(char);
     return length;
 }
