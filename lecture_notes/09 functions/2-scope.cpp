@@ -24,9 +24,7 @@ void f1(){
 }
 
 
-int main()
-{
+int main() {
     char cities[][16] = {'Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'};
-
     return 0;
 }
