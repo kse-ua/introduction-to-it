@@ -13,4 +13,4 @@ ages.unshift(25);
 ages.shift();
 // reverse method 
 ages.reverse();
-console.log(ages)
+console.log(ages);
