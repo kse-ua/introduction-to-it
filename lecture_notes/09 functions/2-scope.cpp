@@ -10,8 +10,7 @@ int f(char s[])
     return length;
 }
 
-int f1(char s[])
-{
+int f1(char s[]) {
     int length = sizeof(s) / sizeof(char);
     return length;
 }
