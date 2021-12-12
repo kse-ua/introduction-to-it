@@ -8,6 +8,6 @@ ages.pop();
 // removing/adding to the front
 ages.unshift(25);
 ages.shift();
-// reverse method 
+// reverse method
 ages.reverse();
 console.log(ages);
