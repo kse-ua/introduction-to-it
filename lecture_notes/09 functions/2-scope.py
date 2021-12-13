@@ -2,24 +2,33 @@ def toLowerCase(cities):
     answearSheat = []
     for item in cities:
         answearSheat.append(item.lower())
-    print(answearSheat)
+    return answearSheat
+    
 def toUpperCase(cities):
     answearSheat = []
     for item in cities:
         answearSheat.append(item.upper())
-    print(answearSheat)
+    return answearSheat
+    
 def findLengthOfString(cities):
     answearSheat = []
     for item in cities:
         answearSheat.append(len(item))
-    print(answearSheat)
+    return answearSheat
+    
 def f1():
+    answearList = []
     citiesFirst = ['Athens', 'Roma']
-    toUpperCase(citiesFirst)
-    toLowerCase(citiesFirst)
+    answearList.append(toUpperCase(citiesFirst))
+    answearList.append(toLowerCase(citiesFirst))
     citiesSecond = ['London', 'Beijing', 'Kiev']
-    toUpperCase(citiesSecond)
+    answearList.append(toUpperCase(citiesSecond))
+    return answearList
+    
 #run
 cities = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga']
-f1()
-findLengthOfString(cities)
+answear = f1()
+for list in answear:
+    print(list)
+answear = findLengthOfString(cities)
+print(answear)
