@@ -5,7 +5,9 @@ using namespace std;
 void mainOutput() {
     string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
 
-    for (int i = 0; i < 5; i++) { cout << cities[i].size() << " ";  }
+    for (int i = 0; i < 5; i++) {
+      cout << cities[i].size() << " ";
+    }
 
 }
 
