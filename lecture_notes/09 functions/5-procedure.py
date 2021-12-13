@@ -1,31 +1,30 @@
-#include <iostream>
-#include <map>
-using namespace std;
+addFunction = lambda a, b: a + b
 
-int addFunction(int a, int b) {
-    return a + b;
-}
+cache = {}
 
-int addProcedure(int a, int b) {
 
-    map < string, int > cache;
-    std::string keyValue = std::to_string(a) + "," + std::to_string(b);
+def addProcedure(a, b):
+    key = f'{a}, {b}'
 
-    int res = cache[keyValue];
+    # Returning a val of key if it's in dict, if not, set it to None
+    res = cache.setdefault(key, None)
+    if res is not None:
+        return res
+    res = a + b
+    cache[key] = res
+    return res
 
-    // Checking if keyValue in cache
-    if (cache.count(keyValue) == 0) {
-        return res;
-    }
-    res = a + b;
-    cache[keyValue] = res;
-    return res;
-}
 
-int main() {
-    cout << "addProcedure: " << addProcedure(10, 20) << endl;
-    cout << "addFunction: " << addFunction(10, 20) << endl;
-    cout << "addProcedure: " << addProcedure(100, 20) << endl;
-    cout << "addFunction: " << addFunction(100, 20) << endl;
-    return 0;
-}
+print([
+    addFunction(10, 20),
+    addFunction(1, 2),
+    addFunction(100, 20),
+    addFunction(100, 200)
+])
+
+print([
+    addProcedure(10, 20),
+    addProcedure(1, 2),
+    addProcedure(100, 20),
+    addProcedure(100, 200),
+])
