@@ -1,23 +1,30 @@
-#include <stdio.h>
+﻿#include <iostream>
+#include <vector>
+#include <string>
 
-int main() {
-  int schoolAges[] = { 10, 12, 15, 15 };
-  int studentAges[] = { 17, 18, 18, 19, 20 };
+using namespace std;
 
-  int schoolLength = sizeof(schoolAges) / sizeof(int);
-  int studentLength = sizeof(studentAges) / sizeof(int);
-  int length = schoolLength + studentLength;
-  int ages[length];
+void faster_out(vector<int>& vec)
+{
+    string s = "";
 
-  for (int i = 0; i < schoolLength; i++) {
-    ages[i] = schoolAges[i];
-  }
+    for (int i = 0; i < vec.size(); i++)
+    {
+        s += to_string(vec[i]) + " ";
+    }
 
-  for (int i = 0; i < studentLength; i++) {
-    ages[i + schoolLength] = studentAges[i];
-  }
+    cout << s;
+}
 
-  for (int i = 0; i < length; i++) {
-    printf("ages[%d]: %d\n", i, ages[i]);
-  }
+int main()
+{
+    vector<int> first = { 0, 1, 1, 5, 2 };
+    vector<int> second = { 1, 2, 3, 4 }; // lets use our first vector after concat
+
+    for (int i = 0; i < second.size(); i++)
+    {
+        first.push_back(second[i]);
+    }
+
+    faster_out(first);
 }
