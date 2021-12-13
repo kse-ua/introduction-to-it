@@ -1,15 +1,13 @@
-def addFunction(a, b):
-    res = a + b
-    return res
-
+addFunction = lambda a, b: a + b
 
 cache = {}
 
 
 def addProcedure(a, b):
     key = f'{a}, {b}'
-    cache[key] = None
-    res = cache[key]
+
+    # Returning a val of key if it's in dict, if not, set it to None
+    res = cache.setdefault(key, None)
     if res is not None:
         return res
     res = a + b
