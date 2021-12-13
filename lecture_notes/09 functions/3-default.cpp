@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int maximum(int a = 0, int b = 0) {
+int Maximum(int a = 0, int b = 0) {
     if (a > b) return a;
     return b;
 }
@@ -9,6 +9,6 @@ int maximum(int a = 0, int b = 0) {
 
 int main()
 {
-    cout << maximum(-20) << '\n';
+    cout << Maximum(-20) << '\n';
     return 0;
 }
