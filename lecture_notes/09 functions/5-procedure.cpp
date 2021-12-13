@@ -3,8 +3,7 @@
 using namespace std;
 
 int addFunction(int a, int b) {
-    int res = a + b;
-    return res;
+    return a + b;
 }
 
 int addProcedure(int a, int b) {
@@ -12,9 +11,10 @@ int addProcedure(int a, int b) {
     map < string, int > cache;
     std::string keyValue = std::to_string(a) + "," + std::to_string(b);
 
-    cache[keyValue] = 0;
     int res = cache[keyValue];
-    if (res != 0) {
+
+    // Checking if keyValue in cache
+    if (cache.count(keyValue) == 0) {
         return res;
     }
     res = a + b;
