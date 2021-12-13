@@ -17,5 +17,7 @@ def add_procedure(a, b):
     return res
 
 
-print([add_procedure(10, 20), add_procedure(1, 2),
-       add_procedure(100, 20), add_procedure(100, 200)])
+print([add_procedure(10, 20), \
+       add_procedure(1, 2), \
+       add_procedure(100, 20), \
+       add_procedure(100, 200)])
