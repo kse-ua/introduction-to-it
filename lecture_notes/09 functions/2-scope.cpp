@@ -12,6 +12,5 @@ int f(string s) {
 int main()
 {
     string cities[] = {"Athens", "Roma", "London", "Beijing", "Kiev", "Riga"};
-    int l = f("blya");
-    printf("%d\n", l);
+    
 }
