@@ -1,12 +1,8 @@
 #include <stdio.h>
 
 int max(int a = 0, int b = 0) {
-    if(a > b) {
-        return a;
-    }
-    else {
-        return b;
-    }
+    if(a > b) return a;
+    return b;
 }
 
 int main() {
