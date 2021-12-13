@@ -2,7 +2,7 @@ cities = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga']
 f = list(map(lambda x: len(x), cities))
 
 
-def f1():
+def convert_cities():
     cities = ['Athens', 'Roma']
     f = list(map(lambda x: x.upper(), cities))
 
@@ -21,7 +21,7 @@ def f1():
     print(f)
 
 
-f1()
+convert_cities()
 
 print({'cities': cities})
 print(list(f))
