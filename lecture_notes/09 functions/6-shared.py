@@ -2,7 +2,10 @@ cache = {}
 
 
 def addProcedure(a, b):
-    key = f'{a}, {b}'
+   key = f'{a}, {b}'
+    res = cache.setdefault(key, None)
+    if res is not None:
+        return res
     res = a + b
     cache[key] = res
     return res
@@ -10,6 +13,9 @@ def addProcedure(a, b):
 
 def subProcedure(a, b):
     key = f'{a}, {b}'
+    res = cache.setdefault(key, None)
+    if res is not None:
+        return res
     res = a - b
     cache[key] = res
     return res
