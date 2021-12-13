@@ -9,7 +9,7 @@ def add_procedure(a, b):
     return res
 
 def sub_procedure(a, b):
-    key = f'{str(a)},{str(b)}'
+    key = f'{str(a)},{str(-b)}'
     if key in cache:
         return cache[key]
     res = a - b
