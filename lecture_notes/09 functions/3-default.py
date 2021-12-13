@@ -4,8 +4,7 @@ def max(x=0, y=0):
     elif x < y:
         return y
     elif x == y:
-        print("equal")
-        return
+        return x
 
 
-print(max(10, 20), max(10), max(-20))
+print(max(10, 20), max(10), max(-20), max())
