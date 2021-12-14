@@ -3,6 +3,5 @@ node_modules
 *.json
 *.exe
 *.ilk
-*.pdb
-*.exe
 *.obj
+*.pdb
