@@ -1,4 +1,4 @@
-# Tasks for lecture 10: refactoring (max grade +30)
+# Tasks for lecture 10: refactoring
 
 - Rebase your repository main branch (forked from
   `https://github.com/kse-ua/introduction-to-it`)
