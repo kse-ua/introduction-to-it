@@ -1,12 +1,8 @@
 node_modules
 .DS_Store
-.vscode/launch.json
-.vscode/tasks.json
-lecture_notes/08 collections/1-array.exe
-lecture_notes/08 collections/1-array.ilk
-lecture_notes/08 collections/1-array.pdb
-lecture_notes/08 collections/2-function.exe
-lecture_notes/08 collections/4-concat.exe
-lecture_notes/08 collections/vc140.pdb
-lecture_notes/08 collections/1-array.obj
-lecture_notes/extras/test.py
+*.json
+*.exe
+*.ilk
+*.pdb
+*.exe
+*.obj
