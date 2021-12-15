@@ -3,8 +3,8 @@ def getFirstAndLast(ages):
     last = ages[-1]
     return first, last
 
-def _print(str, args):
-    first, last = getFirstAndLast(args)
+def _print(str):
+    first, last = getFirstAndLast(ages)
     print('\n' + str)
     print('ages:', ages)
     print('first:', first, ', last:', last)
@@ -12,7 +12,7 @@ def _print(str, args):
 
 
 ages = [10, 12, 15, 15, 17, 18, 18, 19, 20]
-_print('original array', ages)
+_print('original list')
 
 ages.append(21)
 _print('ages.append(21) - adds an item to the end of the list')
