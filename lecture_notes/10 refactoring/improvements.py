@@ -1,7 +1,7 @@
 import json
 
-def shift(offset, points):
-  def add_offset_to_point(point):
+def move(offset):
+  def move_to_offset(point):
     type_ = type(point)
     if type_ == type({}):
       point['x'] += offset['x']
@@ -10,20 +10,19 @@ def shift(offset, points):
       point = json.loads(point)
       point['x'] += offset['x']
       point['y'] += offset['y']
-    return point 
-  moved = map(add_offset_to_point, points)
+    return point
+  return move_to_offset
 
-  return moved 
-  
 
-polyline = [
+polyline=[
   {'x': 0, 'y': 0},
-  {'x' : 20, 'y' : 20},
+  {'x' : 10, 'y' : 10},
   '{"x": 20, "y": 20}',
   {'x': 30, 'y': 30},
 ]
 
-path = shift({'x':10, 'y':-5 }, polyline)
+offset = move({'x':10, 'y':-5 })
+path = map(offset, polyline)
 print(path)
 
 
