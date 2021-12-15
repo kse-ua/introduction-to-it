@@ -1,12 +1,18 @@
-# Python code
-ages = {'Vasia Pupkin': 19, 'Marcus Aurelius': 1860}
-print(f'ages: {ages}')
+'use strict';
 
-ages['Vasia Pupkin'] = 20
-print(f'ages: {ages}')
+const ages = {
+  'Vasia Pupkin': 19,
+  'Marcus Aurelius': 1860,
+};
+console.log({ ages });
 
-ages.pop("Vasia Pupkin")
-print(f'ages: {ages}')
+ages['Vasia Pupkin'] = 20;
+console.log({ ages });
 
-print("Vasia Pupkin:", "Vasia Pupkin" in ages)
-print('Marcus Aurelius:', "Marcus Aurelius" in ages)
+Reflect.deleteProperty(ages, 'Vasia Pupkin');
+console.log({ ages });
+
+console.log({
+  'Vasia Pupkin': Reflect.has(ages, 'Vasia Pupkin'),
+  'Marcus Aurelius': Reflect.has(ages, 'Marcus Aurelius'),
+});
