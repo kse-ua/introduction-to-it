@@ -25,10 +25,12 @@ In this repository contains examples and tasks for the course "Introduction to I
 2. [Системи числення](/assignments_2021/assignment_2.md);
 3. [Робота з текстовими файлами](/assignments_2021/assignment_3.md);
 
-Завляння до лекцій:
-7. [Основи](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/07%20functions/README.md)
-8. [Колекції](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/08%20functions/README.md)
-9. [Функції](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/09%20functions/README.md)
+Tasks for lectures:
+- [Lecture #7: Basics](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/07%20basics/README.md)
+- [Lecture #8: Collections](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/08%20collections/README.md)
+- [Lecture #9: Functions](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/09%20functions/README.md)
+- [Lecture #10: Refactoring](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/10%20review/README.md)
+- [Lecture #11: Review](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/11%20refactoring/README.md)
 
 |  # | Lecture     | Max | Soft deadline | Hard deadline |
 |---:|-------------|----:|---------------|---------------|
@@ -39,4 +41,4 @@ In this repository contains examples and tasks for the course "Introduction to I
 |  8 | Collections |  30 |         03.12 |          3.12 |
 |  9 | Functions   |  30 |         12.12 |         17.12 |
 | 10 | Refactoring |  30 |         17.12 |         24.12 |
-| 11 | Review      |  30 |         24.12 |         24.12 |
+| 11 | Review      |  30 |         24.12 |         26.12 |
