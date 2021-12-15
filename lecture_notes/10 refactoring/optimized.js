@@ -1,11 +1,8 @@
 'use strict';
 
-const parse = (object) => {
-  if (typeof object === 'string') {
-    object = JSON.parse(object);
-  }
-  return object;
-}
+const parse = (object) =>
+  if (typeof object === 'string') ? JSON.parse(object) : object;
+
 
 const shift = (offset) => (point) => {
   point.x += offset.x;
@@ -22,5 +19,5 @@ const polyline = [
 
 const offset = shift({ x: 10, y: -5 });
 const parsed = polyline.map(parse);
-const res = parsed.map(offset);
-console.log ({ res });
+const shifted = parsed.map(offset);
+console.log ({ shifted });
