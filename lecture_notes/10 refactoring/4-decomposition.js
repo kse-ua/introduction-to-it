@@ -5,9 +5,9 @@ const shift = (offset) => (point) => {
       point.x += offset.x;
       point.y += offset.y;
     } else {
-        point = JSON.parse(point);
-        point.x += offset.x;
-        point.y += offset.y;
+      point = JSON.parse(point);
+      point.x += offset.x;
+      point.y += offset.y;
     }
     return point
   };
