@@ -24,4 +24,4 @@ const polyline = [
   ];
   
   const path = shift({ x: 10, y: -5 }, polyline);
-  console.log({ path })
+  console.log({ path });
