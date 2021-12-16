@@ -6,11 +6,11 @@ const shift = (offset, points) => {
       point.x += offset.x;
       point.y += offset.y;
     } else {
-        point = JSON.parse(point);
-        point.x += offset.x;
-        point.y += offset.y;
+      point = JSON.parse(point);
+      point.x += offset.x;
+      point.y += offset.y;
     }
-    return point
+    return point;
   });
   return movedPoints;
 };
@@ -22,5 +22,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const offset = shift({ x: 10, y: -5 }, polyline);
-console.log({ polyline });
+const shifted = shift({ x: 10, y: -5 }, polyline);
+console.log({ shifted });
