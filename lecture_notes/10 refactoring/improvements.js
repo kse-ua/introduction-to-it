@@ -1,10 +1,22 @@
 'use strict';
 
-const move = ({ dx, dy }) => ({ x, y }) => ({ x: x + dx, y: y + dy });
+const move = (offset) => (point) => {
+  const moved = {
+    x: point.x + offset.dx,
+    y: point.y + offset.dy,
+  };
+  return moved;
+};
 
-const parsers = { string: JSON.parse, object: (x) => x };
+const parsers = {
+  string: JSON.parse,
+  object: (obj) => obj,
+};
 
-const conditionalParse = (item) => parsers[typeof item](item);
+const conditionalParse = (item) => {
+  const parser = parsers[typeof item];
+  return parser(item);
+};
 
 const polyline = [
   { x: 0, y: 0 },
