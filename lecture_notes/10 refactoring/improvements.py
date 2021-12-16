@@ -1,17 +1,11 @@
 import json
 
-def move(offset):
-  def add_offset_to_point(point):
-      point['x'] += offset['x']
-      point['y'] += offset['y']
-      return point 
-  return add_offset_to_point
-
-def conditional_parse(item):
-  if type(item) == type({}): 
-    return item 
-  return json.loads(item)
-
+move = lambda dxy:(
+  lambda xy:({ 'x': xy['x'] + dxy['dx'], 'y': xy['y'] + dxy['dy'] }))
+  
+def conditionalParse(item):
+ return json.loads(item) if type(item) == type('')  else item
+   
 polyline = [
   {'x': 0, 'y': 0},
   {'x' : 10, 'y' : 10},
@@ -19,11 +13,7 @@ polyline = [
   {'x': 30, 'y': 30},
 ]
 
-offset = move({'x':10, 'y':-5 })
-parsed = map(conditional_parse, polyline)
+offset = move({ 'dx': 10, 'dy': -5 })
+parsed = map(conditionalParse, polyline)
 path = map(offset, parsed)
 print(path)
-
-
-
-
