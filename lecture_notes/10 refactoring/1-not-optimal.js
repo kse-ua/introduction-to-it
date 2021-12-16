@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 let shift = (offset, points) => {
-  points.forEach((point) => {
+  for (let point of points) {
     const type = typeof point;
-    if (type === 'object') {
+    if (type === "object") {
       point.x += offset.x;
       point.y += offset.y;
     } else {
@@ -12,7 +12,7 @@ let shift = (offset, points) => {
       points[i].x += offset.x;
       points[i].y += offset.y;
     }
-  });
+  }
   return points;
 };
 
@@ -23,5 +23,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-shift({ x: 10, y: -5 }, polyline);
-console.log({ polyline });
+const path = shift({ x: 10, y: -5 }, polyline);
+console.log({ path });
