@@ -1,12 +1,19 @@
 import json
 
-move = lambda dxy:(
-  lambda xy:({ 'x': xy['x'] + dxy['dx'], 'y': xy['y'] + dxy['dy'] }))
+move = lambda offset:(
+  lambda point:{ 
+    'x': point['x'] + offset['dx'], 
+    'y': point['y'] + offset['dy']
+})
 
-parsers = {type(''): json.loads, type({}): lambda x:x}
+parsers = {
+  type(''): json.loads, 
+  type({}): lambda dict:dict
+}
 
 def conditional_parse(item):
-  return parsers[type(item)](item)
+  parser = parsers[type(item)]
+  return parser(item)
 
 polyline = [
   {'x': 0, 'y': 0},
