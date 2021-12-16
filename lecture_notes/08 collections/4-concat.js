@@ -7,14 +7,16 @@ const getFirstAndLast = (array) => ({
   last: array[array.length - 1],
 });
 
-const concat = (arr1, arr2) => arr1.concat(arr2);
+const concat = (arr1, arr2) => {
+  const arr = arr1.slice();
+  arr.push(...arr2);
+  return arr;
+};
 
 // Usage
 
 const schoolAges = [10, 12, 15, 15];
 const studentAges = [17, 18, 18, 19, 20];
-
 const ages = concat(schoolAges, studentAges);
 const { first, last } = getFirstAndLast(ages);
-
 console.log({ first, last });
