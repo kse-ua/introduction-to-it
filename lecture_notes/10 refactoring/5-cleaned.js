@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 const shift = (offset) => (point) => {
-  if (typeof point !== "object") {
+  if (typeof point !== 'object') {
     point = JSON.parse(point);
   }
   point.x += offset.x;
