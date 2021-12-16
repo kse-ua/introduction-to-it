@@ -1,19 +1,16 @@
 'use strict';
 
-const shift = (offset, points) => {
-  const moved = points.map((point) => {
-    const type = typeof point;
-    if (type === 'object') {
-      point.x += offset.x;
-      point.y += offset.y;
-    } else {
-      point = JSON.parse(point);
-      point.x += offset.x;
-      point.y += offset.y;
-    }
-    return point;
-  });
-  return moved;
+const move = (offset) => (point) => {
+  const type = typeof point;
+  if (type === 'object') {
+    point.x += offset.x;
+    point.y += offset.y;
+  } else {
+    point = JSON.parse(point);
+    point.x += offset.x;
+    point.y += offset.y;
+  }
+  return point;
 };
 
 const polyline = [
@@ -23,5 +20,6 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const path = shift({ x: 10, y: -5 }, polyline);
+const offset = move({ x: 10, y: -5 });
+const path = polyline.map(offset);
 console.log({ path });
