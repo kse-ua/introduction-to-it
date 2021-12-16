@@ -9,7 +9,6 @@ def shift(offset, points):
             points[i] = point
         point['x'] += offset['x']
         point['y'] += offset['y']
-        
     return points
 
 polyline = [
