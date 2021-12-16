@@ -2,10 +2,12 @@ import json
 
 move = lambda dxy:(
   lambda xy:({ 'x': xy['x'] + dxy['dx'], 'y': xy['y'] + dxy['dy'] }))
-  
-def conditionalParse(item):
- return json.loads(item) if type(item) == type('')  else item
-   
+
+parsers = {type(''): json.loads, type({}): lambda x:x}
+
+def conditional_parse(item):
+  return parsers[type(item)](item)
+
 polyline = [
   {'x': 0, 'y': 0},
   {'x' : 10, 'y' : 10},
@@ -14,6 +16,6 @@ polyline = [
 ]
 
 offset = move({ 'dx': 10, 'dy': -5 })
-parsed = map(conditionalParse, polyline)
+parsed = map(conditional_parse, polyline)
 path = map(offset, parsed)
 print(path)
