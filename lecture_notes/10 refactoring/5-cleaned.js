@@ -2,7 +2,7 @@
 
 const shift = (offset) =>  (point) => {
   if (typeof point !== 'object') {
-    point = JSON.parse(point);  
+    point = JSON.parse(point); 
   }
   point.x += offset.x;
   point.y += offset.y;
@@ -17,5 +17,5 @@ const polyline = [
 ];
 
 const offset = shift({ x: 10, y: -5 });
-const shifted = polyline.map(offset)
+const shifted = polyline.map(offset);
 console.log({ shifted });
