@@ -11,7 +11,7 @@ const shift = (offset, points) => {
       points[i].x += offset.x;
       points[i].y += offset.y;
     }
-  };
+ };
   return points;
 };
 
@@ -22,5 +22,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const offset = shift({ x: 10, y: -5 }, polyline);
-console.log({ polyline });
+const shifted = shift({ x: 10, y: -5 }, polyline);
+console.log({ shifted });
