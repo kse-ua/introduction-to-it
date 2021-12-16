@@ -22,7 +22,11 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const move = shift({ dx: 10, dy: -5 });
-const parsed = polyline.map(conditionalParse);
-const path = parsed.map(move);
-console.log({ path });
+const doTask = () => {
+  const move = shift({ dx: 10, dy: -5 });
+  const parsed = polyline.map(conditionalParse);
+  const path = parsed.map(move);
+  console.log({ path });
+};
+
+return doTask.call();
