@@ -1,11 +1,11 @@
 import json
 
 
-def PointParse(points):
+def pointParse(points):
     return [json.loads(point) if type(point) == str else point for point in points]
 
 
-def PointsShift(arr, dot_param):
+def pointsShift(arr, dot_param):
     for dot in arr:
         dot['x'] += dot_param['x']
         dot['y'] += dot_param['y']
@@ -19,6 +19,6 @@ polyline = [
     {'x': 30, 'y': 30},
 ]
 
-LineIter = PointParse(polyline)
+lineIter = pointParse(polyline)
 
-print(PointsShift(LineIter, {'x': 10, 'y': -5}))
+print(pointsShift(lineIter, {'x': 10, 'y': -5}))
