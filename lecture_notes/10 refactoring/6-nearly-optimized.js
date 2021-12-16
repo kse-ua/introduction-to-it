@@ -1,6 +1,6 @@
 'use strict';
 
-const shift = (offset) =>  (point) => {
+const shift = (offset) => (point) => {
   point.x += offset.x;
   point.y += offset.y;
   return point;
@@ -21,4 +21,4 @@ const polyline = [
 const offset = shift({ x: 10, y: -5 });
 const parsed = polyline.map(conditional);
 const shifted = parsed.map(offset);
-console.log({ shifted });
+console.log({ shifted })
