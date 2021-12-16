@@ -2,7 +2,7 @@
 
 const shift = (offset) =>  (point) => {
   if (typeof point !== 'object') {
-    point = JSON.parse(point); 
+    point = JSON.parse(point);
   }
   point.x += offset.x;
   point.y += offset.y;
