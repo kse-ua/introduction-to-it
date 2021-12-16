@@ -11,7 +11,7 @@ const shift = (offset, points) => {
       points[i].x += offset.x;
       points[i].y += offset.y;
     }
- };
+};
   return points;
 };
 
