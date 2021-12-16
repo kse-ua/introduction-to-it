@@ -1,15 +1,9 @@
 'use strict';
 
-const move = (offset) => (point) => {
-  point.x += offset.x;
-  point.y += offset.y;
-  return point;
-};
+const move = ({ dx, dy }) => ({ x, y }) => ({ x: x + dx, y: y + dy });
 
-const conditionalParse = (item) => {
-  if (typeof item === 'object') return item;
-  return JSON.parse(item);
-};
+const conditionalParse = (item) =>
+  (typeof item === 'string' ? JSON.parse(item) : item);
 
 const polyline = [
   { x: 0, y: 0 },
@@ -18,7 +12,7 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const offset = move({ x: 10, y: -5 });
+const offset = move({ dx: 10, dy: -5 });
 const parsed = polyline.map(conditionalParse);
 const path = parsed.map(offset);
 console.log({ path });
