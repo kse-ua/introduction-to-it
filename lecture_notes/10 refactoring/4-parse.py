@@ -1,7 +1,7 @@
 import json
 
 
-def parse(points):
+def conditional_parse(points):
     return [json.loads(point) if type(point) == str else point for point in points]
 
 
@@ -19,5 +19,5 @@ polyline = [
     {'x': 30, 'y': 30},
 ]
 
-parsed = parse(polyline)
+parsed = conditional_parse(polyline)
 print(shift(parsed, {'x': 10, 'y': -5}))
