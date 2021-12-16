@@ -1,10 +1,14 @@
 import json
 
-move = lambda offset:(
-  lambda point:{ 
-    'x': point['x'] + offset['dx'], 
-    'y': point['y'] + offset['dy']
-})
+class Shift:
+  def __init__(self,offset):
+    self.offset = offset
+
+  def move(self,point):
+    return {
+    'x': point['x'] + self.offset['dx'], 
+    'y': point['y'] + self.offset['dy'],
+    }
 
 parsers = {
   type(''): json.loads, 
@@ -22,7 +26,7 @@ polyline = [
   {'x': 30, 'y': 30},
 ]
 
-offset = move({ 'dx': 10, 'dy': -5 })
+shift = Shift({ 'dx': 10, 'dy': -5 })
 parsed = map(conditional_parse, polyline)
-path = map(offset, parsed)
+path = map(lambda point:shift.move(point), parsed)
 print(path)
