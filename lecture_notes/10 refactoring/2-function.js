@@ -1,3 +1,5 @@
+'use strict';
+
 function shift(offset, points) {
     points.forEach(function (point) {
         point.x += offset.x
