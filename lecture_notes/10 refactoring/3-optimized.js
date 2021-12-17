@@ -9,7 +9,7 @@ const moove = (point) => {
 };
 
 const parse = (point) => {
-  if (typeof point === "object") {
+  if (typeof point === 'object') {
     return point;
   }
   return JSON.parse(point);
