@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const parsePoint = (point) => {
   if (typeof point === 'object') {
