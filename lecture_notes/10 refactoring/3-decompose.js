@@ -1,15 +1,17 @@
 'use strict';
 
+const offset = { x: 10, y: -5 };
+
 const shift = (points) => {
   const moved = points.map((point) => {
-  point.x += offset.x;
-  point.y += offset.y;
-  return point;
-});
-return moved;
+    point.x += offset.x;
+    point.y += offset.y;
+    return point;
+  });
+  return moved;
 };
 
-const type_check = (line) => {
+const typeCheck = (line) => {
   if (typeof line !== 'object') return JSON.parse(line);
   return line;
 };
@@ -21,8 +23,6 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-
-const offset = { x: 10, y: -5 };
-const checked = polyline.map(type_check);
+const checked = polyline.map(typeCheck);
 const path = shift(checked);
 console.log({ path });
