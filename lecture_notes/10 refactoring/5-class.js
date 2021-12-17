@@ -14,7 +14,7 @@ class Shift {
 }
 
 const parsePoint = (point) => {
-  if (typeof point === 'object');
+  if (typeof point === 'object')
     return point;
   return JSON.parse(point);
 };
