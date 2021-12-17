@@ -23,7 +23,7 @@ const polyline = [
     { x: 30, y: 30 },
 ];
 
-let to_offset = {x: 10, y: -5}
-let parsed = polyline.map(parse_point)
+const to_offset = {x: 10, y: -5}
+const parsed = polyline.map(parse_point)
 shift(to_offset, parsed);
 console.log({ parsed });
