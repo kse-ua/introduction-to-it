@@ -1,7 +1,7 @@
 'use strict';
 
 let parse_point = (point) => {
-    return (typeof point === 'object' ? point: JSON.parse(point))
+    return (typeof point === 'object' ? point: JSON.parse(point));
 }
 
 let shift = (offset) => (point) => {
@@ -17,7 +17,7 @@ const polyline = [
     { x: 30, y: 30 },
 ];
 
-const to_offset = {x: 10, y: -5}
-const parsed = polyline.map(parse_point)
-const result = parsed.map(shift(to_offset))
-console.log({ result })
+const to_offset = {x: 10, y: -5};
+const parsed = polyline.map(parse_point);
+const result = parsed.map(shift(to_offset));
+console.log({ result });
