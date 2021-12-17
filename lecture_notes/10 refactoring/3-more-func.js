@@ -1,6 +1,6 @@
 'use strict';
 
-let parsePoint = (point) => {
+const parsePoint = (point) => {
   if (typeof point === 'object') {
     return point;
   } else {
@@ -8,7 +8,7 @@ let parsePoint = (point) => {
   }
 };
 
-let shift = (offset) => (point) => {
+const shift = (offset) => (point) => {
   point.x += offset.x;
   point.y += offset.y;
   return point;
