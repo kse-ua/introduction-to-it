@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 let parsePoint = (point) => {
-  if (typeof point === "object") {
+  if (typeof point === 'object') {
     return point;
   } else {
     return JSON.parse(point);
