@@ -1,9 +1,10 @@
 'use strict';
 
-const parsePoint = (point) =>
+const parsePoint = (point) => {
   if (typeof point === 'object')
     return point
   return JSON.parse(point)
+}
 
 const shift = (offset) => (point) => {
   point.x += offset.x;
