@@ -1,10 +1,12 @@
-def add_Function(a, b):
+def add_function(a, b):
     res = a + b
     return res
 
+
 cache = {}
 
-def add_Procedure(a, b):
+
+def add_procedure(a, b):
     key = str(a) + ',' + str(b)
     if key in cache:
         return cache[key]
@@ -12,12 +14,13 @@ def add_Procedure(a, b):
     cache[key] = res
     return res
 
-print([add_Function(10, 20),
-       add_Function(1, 2),
-       add_Function(100, 20),
-       add_Function(100, 200)])
 
-print([add_Procedure(10, 20),
-       add_Procedure(1, 2),
-       add_Procedure(100, 20),
-       add_Procedure(100, 200)])
+print([add_function(10, 20),
+       add_function(1, 2),
+       add_function(100, 20),
+       add_function(100, 200)])
+
+print([add_procedure(10, 20),
+       add_procedure(1, 2),
+       add_procedure(100, 20),
+       add_procedure(100, 200)])
