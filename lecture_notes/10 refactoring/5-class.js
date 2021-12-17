@@ -2,19 +2,19 @@
 
 class Shift{
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        this.x = x;
+        this.y = y;
     }
 
     add(point){
-        point.x += this.x
-        point.y += this.y
-        return point
+        point.x += this.x;
+        point.y += this.y;
+        return point;
     }
 }
 
 let parse_point = (point) => {
-    return (typeof point === 'object' ? point: JSON.parse(point))
+    return (typeof point === 'object' ? point: JSON.parse(point));
 }
 
 const polyline = [
@@ -24,7 +24,7 @@ const polyline = [
     { x: 30, y: 30 },
 ];
 
-const shift = new Shift(10, -5)
-const parsed = polyline.map(parse_point)
-const result = parsed.map((point) => shift.add(point))
-console.log({ result })
+const shift = new Shift(10, -5);
+const parsed = polyline.map(parse_point);
+const result = parsed.map((point) => shift.add(point));
+console.log({ result });
