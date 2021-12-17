@@ -1,12 +1,14 @@
-'use strict';
+"use strict";
 
-const curry = (fn) => (...args) => {
-    return (fn.length > args.length ? curry(
-            fn.bind(this, ...args)) :
-        fn(...args));
-};
+const curry =
+    (fn) =>
+        (...args) => {
+            return fn.length > args.length
+                ? curry(fn.bind(this, ...args))
+                : fn(...args);
+        };
 
-const sum4 = (a, b, c, d) => (a + b + c + d);
+const sum4 = (a, b, c, d) => a + b + c + d;
 
 const f = curry(sum4);
 
