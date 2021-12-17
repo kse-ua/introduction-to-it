@@ -7,8 +7,8 @@ def shift(offset, points):
             i = points.index(point)
             point = json.loads(point)
             points[i] = point
-        point['x'] += offset['x']
-        point['y'] += offset['y']
+        point["x"] += offset["x"]
+        point["y"] += offset["y"]
     return points
 
 polyline = [
