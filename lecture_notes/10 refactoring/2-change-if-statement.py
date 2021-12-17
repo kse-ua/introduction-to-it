@@ -9,7 +9,10 @@ def shift(offset, points):
             points[i] = point
         point["x"] += offset["x"]
         point["y"] += offset["y"]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ed9e1903e29065afd98e822459a4d4867f16a76
     return points
 
 
