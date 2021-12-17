@@ -1,10 +1,9 @@
 'use strict';
 
-// Curry takes a func and then return curried
-// Checking if n. arg (fn = sum4 ) > inputted args (y2, y3..) currying.. if n.args == fn, just put args in fn
-
 const curry = (fn) => (...args) => {
-    return fn.length > args.length ? curry(fn.bind(this, ...args)) : fn(...args);
+    return (fn.length > args.length ? curry(
+            fn.bind(this, ...args)) :
+        fn(...args));
 };
 
 const sum4 = (a, b, c, d) => (a + b + c + d);
