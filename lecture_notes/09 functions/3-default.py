@@ -1,7 +1,8 @@
-def max(a = 0, b = 0):
+def fun(a=0, b=0):
     if a > b:
         return a
     else:
         return b
 
-print([max(10, 20), max(10), max(-20)])
+
+print([fun(10, 20), fun(10), fun(-20)])
