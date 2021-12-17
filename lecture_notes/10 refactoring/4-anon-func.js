@@ -18,7 +18,6 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-
 const offset = shift({ x: 10, y: -5 });
 const checked = polyline.map(typeCheck);
 const path = checked.map(offset);
