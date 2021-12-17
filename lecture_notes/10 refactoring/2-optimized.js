@@ -2,12 +2,6 @@
 
 const offset = { x: 10, y: -5 };
 
-const shift = (points) => {
-  const parsed = points.map(parse);
-  const mooved = parsed.map(moove);
-  return mooved;
-};
-
 const moove = (point) => {
   point.x += offset.x;
   point.y += offset.y;
@@ -19,6 +13,12 @@ const parse = (point) => {
     return point;
   }
   return JSON.parse(point);
+};
+
+const shift = (points) => {
+  const parsed = points.map(parse);
+  const mooved = parsed.map(moove);
+  return mooved;
 };
 
 const polyline = [
