@@ -6,7 +6,7 @@ const shift = (offset) => (point) => {
   return point;
 };
 
-const type_check = (line) => {
+const typeCheck = (line) => {
   if (typeof line !== 'object') return JSON.parse(line);
   return line;
 };
@@ -20,6 +20,6 @@ const polyline = [
 
 
 const offset = shift({ x: 10, y: -5 });
-const checked = polyline.map(type_check);
+const checked = polyline.map(typeCheck);
 const path = checked.map(offset);
 console.log({ path });

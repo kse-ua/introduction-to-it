@@ -1,8 +1,8 @@
 'use strict';
 
-const shift = ({ a, b }) => ({ x, y }) => ({ x: x + a, y: y + b});
+const shift = ({ a, b }) => ({ x, y }) => ({ x: x + a, y: y + b });
 
-const type_check = (line) =>
+const typeCheck = (line) =>
   (typeof line !== 'object' ? JSON.parse(line) : line);
 
 const polyline = [
@@ -14,6 +14,6 @@ const polyline = [
 
 
 const offset = shift({ a: 10, b: -5 });
-const checked = polyline.map(type_check);
+const checked = polyline.map(typeCheck);
 const path = checked.map(offset);
 console.log({ path });
