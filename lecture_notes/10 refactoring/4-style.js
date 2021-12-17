@@ -2,7 +2,7 @@
 
 const parsePoint = (point) => {
   if (typeof point === 'object') point;
-  return JSON.parse(point)
+  return JSON.parse(point);
 };
 
 const shift = (offset) => (point) => {
