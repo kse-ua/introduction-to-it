@@ -1,27 +1,38 @@
-'use strict';
+"use strict";
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-let shift = (offset, points) => {
-  points.forEach((point) => {
-    const type = typeof point;
-    if (type === 'object') {
-      point.x += offset.x;
-      point.y += offset.y;
-    } else {
-      let i = points.indexOf(point);
-      points[i] = JSON.parse(point);
-      points[i].x += offset.x;
-      points[i].y += offset.y;
-    }
+rl.question("Enter coordinate X: ", function (X) {
+  rl.question("Enter coordinate Y: ", function (Y) {
+    const x = Number(X);
+    const y = Number(Y);
+
+    const move = (coords) => (point) => {
+      point.x += coords.x;
+      point.y += coords.y;
+      return point;
+    };
+
+    const conditionalParse = (item) => {
+      if (typeof item === "object") return item;
+      return JSON.parse(item);
+    };
+
+    const coordinates = [
+      { x: 0, y: 0 },
+      { x: 10, y: 10 },
+      '{ "x": 20, "y": 20 }',
+      { x: 30, y: 30 },
+    ];
+
+    const parsed = coordinates.map(conditionalParse);
+    const coords = move({ x: x, y: y });
+    const path = parsed.map(coords);
+    console.log({ path });
+
+    rl.close();
   });
-  return points;
-};
-
-const polyline = [
-  { x: 0, y: 0 },
-  { x: 10, y: 10 },
-  '{ "x": 20, "y": 20 }',
-  { x: 30, y: 30 },
-];
-
-shift({ x: 10, y: -5 }, polyline);
-console.log({ polyline });
+});
