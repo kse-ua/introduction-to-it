@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const offset = { x: 10, y: -5 };
 
