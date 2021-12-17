@@ -2,9 +2,9 @@
 
 let parse_point = (point) => {
     if (typeof point === 'object') {
-        return point
+        return point;
     } else {
-        return JSON.parse(point)
+        return JSON.parse(point);
     }
 }
 
@@ -23,7 +23,7 @@ const polyline = [
     { x: 30, y: 30 },
 ];
 
-const to_offset = {x: 10, y: -5}
-const parsed = polyline.map(parse_point)
+const to_offset = {x: 10, y: -5};
+const parsed = polyline.map(parse_point);
 shift(to_offset, parsed);
 console.log({ parsed });
