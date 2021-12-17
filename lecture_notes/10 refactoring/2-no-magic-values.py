@@ -24,3 +24,4 @@ to_offset = {'x': 10, 'y': -5}
 changed = shift(to_offset, polyline)
 for obj in changed:
     print(obj)
+    
