@@ -1,5 +1,13 @@
 'use strict';
 
+const offset = { x: 10, y: -5 };
+
+const shift = (points) => {
+  const parsed = points.map(parse);
+  const mooved = parsed.map(moove);
+  return mooved;
+};
+
 const moove = (point) => {
   point.x += offset.x;
   point.y += offset.y;
@@ -8,8 +16,8 @@ const moove = (point) => {
 
 const parse = (point) => {
   if (typeof point === 'object') {
-    return point 
-  };
+    return point;
+  }
   return JSON.parse(point);
 };
 
@@ -20,11 +28,5 @@ const polyline = [
   { x: 30, y: 30 },
 ];
 
-const shift = (points) => {
-  const parsed = points.map(parse);
-  const mooved = parsed.map(moove);
-  return mooved;
-};
 
-const offset = { x: 10, y: -5 };
 console.log(shift(polyline));
