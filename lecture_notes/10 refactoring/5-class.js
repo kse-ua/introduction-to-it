@@ -14,7 +14,7 @@ class Shift {
 }
 
 const parsePoint = (point) =>
-  (typeof point === 'string' ? JSON.parse(point) : point);
+  (typeof point === 'object' ? point : JSON.parse(point));
 
 const polyline = [
   { x: 0, y: 0 },
