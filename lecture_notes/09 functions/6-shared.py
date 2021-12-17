@@ -1,6 +1,7 @@
 cache = {}
 
-def add_Procedure(a, b):
+
+def add_procedure(a, b):
     key = str(a) + ',' + str(b)
     if key in cache:
         return cache[key]
@@ -8,7 +9,8 @@ def add_Procedure(a, b):
     cache[key] = res
     return res
 
-def sub_Procedure(a, b):
+
+def sub_procedure(a, b):
     key = str(a) + ',' + str(b)
     if key in cache:
         return cache[key]
@@ -16,5 +18,6 @@ def sub_Procedure(a, b):
     cache[key] = res
     return res
 
-print('sub:', sub_Procedure(5, 2))
-print('sub:', add_Procedure(5, 2))
+
+print('sub:', sub_procedure(5, 2))
+print('sub:', add_procedure(5, 2))
