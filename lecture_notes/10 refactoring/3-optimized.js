@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const offset = { x: 10, y: -5 };
 
@@ -9,7 +9,7 @@ const moove = (point) => {
 };
 
 const parse = (point) => {
-  if (typeof point === 'object') {
+  if (typeof point === "object") {
     return point;
   }
   return JSON.parse(point);
@@ -27,6 +27,5 @@ const polyline = [
   '{ "x": 20, "y": 20 }',
   { x: 30, y: 30 },
 ];
-
 
 console.log(shift(polyline));
