@@ -5,10 +5,12 @@ def parse_point(point):
     return point if (type(point) is dict) else json.loads(point)
 
 
-def shift(point, offset, x_key = 'x', y_key = 'y'):
-    point[x_key] += offset[x_key]
-    point[y_key] += offset[y_key]
-    return point
+def shift(offset, x_key = 'x', y_key = 'y'):
+    def add(point):
+        point[x_key] += offset[x_key]
+        point[y_key] += offset[y_key]
+        return point
+    return add
 
 
 polyline = [
@@ -19,8 +21,7 @@ polyline = [
 ]
 to_offset = {'x': 10, 'y': -5}
 result = list(map(parse_point, polyline))
-for i in range(0, len(result)):
-    result[i] = shift(result[i], to_offset)
-for obj in result:
+changed = list(map(shift(to_offset), result))
+for obj in changed:
     print(obj)
     
