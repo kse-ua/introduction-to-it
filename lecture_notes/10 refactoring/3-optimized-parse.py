@@ -7,7 +7,7 @@ def parse_point(point):
     return json.loads(point)
 
 
-def shift(offset, points, x_key ='x', y_key ='y'):
+def shift(offset, points, x_key = 'x', y_key = 'y'):
     for point in points:
         point[x_key] += offset[x_key]
         point[y_key] += offset[y_key]
