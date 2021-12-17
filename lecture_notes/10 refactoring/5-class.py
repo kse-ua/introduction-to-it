@@ -27,3 +27,4 @@ parsed = list(map(parse_point, polyline))
 changed = list(map(to_shift.add, parsed))
 for obj in changed:
     print(obj)
+    
