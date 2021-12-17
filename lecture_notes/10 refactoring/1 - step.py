@@ -25,4 +25,5 @@ polyline = [
 ]
 
 shift({'x': 50, 'y': -40}, polyline)
-print(polyline)
+for item in polyline:
+    print(item)
