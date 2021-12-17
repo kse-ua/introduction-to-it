@@ -1,6 +1,8 @@
 'use strict';
 
-const shift = ({ a, b }) => ({ x, y }) => ({ x: x + a, y: y + b });
+const shift = ({ a, b }) =>
+ ({ x, y }) => 
+ ({ x: x + a, y: y + b });
 
 const typeCheck = (line) =>
   (typeof line !== 'object' ? JSON.parse(line) : line);
