@@ -22,10 +22,3 @@ polyline = [
 ]
 shift({'x': 10, 'y': -5}, polyline)
 print(polyline)
-
-
-
-
-
-
-
