@@ -1,7 +1,7 @@
 import json
 
 
-def shift(offset, points, x_key ='x', y_key ='y'):
+def shift (offset, points, x_key = 'x', y_key = 'y'):
     for point in points:
         if type(point) is dict:
             point[x_key] += offset[x_key]
