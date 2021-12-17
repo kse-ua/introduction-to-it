@@ -2,8 +2,7 @@
 
 const shift = (offset, points) => {
   const moved = points.map((point) => {
-    const type = typeof point;
-    if (type !== 'object') {
+    if (typeof point !== 'object') {
       point = JSON.parse(point);
     }
     point.x += offset.x;
