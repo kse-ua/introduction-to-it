@@ -8,7 +8,7 @@ const move =
       y: y + dy,
     });
 
-const coordParse => (item) =>
+const coordParse = (item) =>
   //Cheking for 'True' or 'False'
   typeof item === 'string' ? JSON.parse(item) : item;
 
