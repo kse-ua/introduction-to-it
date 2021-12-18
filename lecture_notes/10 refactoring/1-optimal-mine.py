@@ -1,19 +1,17 @@
 import json
 
 def shift(offset, points):
-    for ind, point in enumerate(points):
+    for point in points:
         type_p = type(point)
         if type_p == dict:
             point['x'] += offset['x']
             point['y'] += offset['y']
         else:
+            ind = points.index(point)
             points[ind] = json.loads(point)
             point = points[ind]
-            #print()
-            #"""
             point["x"] += offset['x']
             point["y"] += offset['y']
-            #"""
     return points
 
 
