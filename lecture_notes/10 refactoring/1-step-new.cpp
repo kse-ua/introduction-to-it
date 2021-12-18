@@ -15,16 +15,16 @@ struct PolylineEntry {
     Type type;
 };
 
-void Parse(PolylineEntry polylines[], int size) {
-    for (int i = 0; i < size; i++) {
-        if (polylines->type == Dictionary) {
-            //
-        }
-        else if (polylines->type == String) {
-            //
-        }
-    }
-}
+//void Parse(PolylineEntry polylines[], int size) {
+//    for (int i = 0; i < size; i++) {
+//        if (polylines->type == Dictionary) {
+//            //
+//        }
+//        else if (polylines->type == String) {
+//            //
+//        }
+//    }
+//}
 
 int main() {
     map<string, int> polyline[] = {
@@ -89,8 +89,12 @@ int main() {
             entry3,
     };
 
-    int a = polyline[1]["x"];
-    cout << a << endl;
+    for (auto & poly : polylines) {
+        for (const auto &p : poly.dict) {
+            cout << "m[" << p.first << "] = " << p.second << '\n';
+        }
+    }
+
     return 0;
 
 }
