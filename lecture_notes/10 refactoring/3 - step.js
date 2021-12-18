@@ -9,7 +9,7 @@ const move =
             y: y + dy,
         });
 
-const conditionalParse = (item) =>
+const coord_parse = (item) =>
 //Cheking for 'True' or 'False'
     (
         typeof item === 'string'
@@ -25,6 +25,6 @@ const polyline = [
 ];
 
 const offset = move({ dx: 45, dy: 54 });
-const parsed = polyline.map(conditionalParse);
+const parsed = polyline.map(coord_parse);
 const path = parsed.map(offset);
 console.log({ path });
