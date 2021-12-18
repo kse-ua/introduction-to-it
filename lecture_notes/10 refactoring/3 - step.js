@@ -1,21 +1,16 @@
-'use strict';
+"use strict";
 
 const move =
-    ({ dx, dy }) =>
-      ({ x, y }) =>
-        ({
-          //Returning result
-          x: x + dx,
-          y: y + dy,
-        });
+  ({ dx, dy }) =>
+  ({ x, y }) => ({
+    //Returning result
+    x: x + dx,
+    y: y + dy,
+  });
 
 const coordParse = (item) =>
-//Cheking for 'True' or 'False'
-  (
-    typeof item === 'string' ?
-      JSON.parse(item) :
-      item
-  );
+  //Cheking for 'True' or 'False'
+  typeof item === "string" ? JSON.parse(item) : item;
 
 const polyline = [
   { x: 0, y: 0 },
