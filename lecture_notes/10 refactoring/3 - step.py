@@ -10,7 +10,7 @@ def shift(coords):
     return move
 
 
-def parse_point(point):
+def coord_parse(point):
     return point if (type(point) is dict) else json.loads(point)
 
 
@@ -21,7 +21,7 @@ polyline = [
     {'x': 30, 'y': 30}
 ]
 offset = {'x': 45, 'y': 54}
-parsed = list(map(parse_point, polyline))
+parsed = list(map(coord_parse, polyline))
 path = list(map(shift(offset), parsed))
 for obj in path:
     print(obj)
