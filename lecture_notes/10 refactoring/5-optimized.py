@@ -1,17 +1,10 @@
 import json
 
-def move(offset):
-    def plus(point):
-        point["x"] += offset["x"]
-        point["y"] += offset["y"]
-        return point
-    return plus
-    
+def move(o):
+    return lambda p: {"x": p["x"] + o["x"], "y": p["y"] + o["y"]}
 
 def conditionalParse(item):
-  if type(item) == dict: return item
-  return json.loads(item)
-
+  return item if type(item) == dict else json.loads(item)
 
 polyline = [
   { "x": 0, "y": 0 },
