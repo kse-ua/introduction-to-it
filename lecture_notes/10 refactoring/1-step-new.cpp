@@ -2,7 +2,6 @@
 # include <string>
 # include <map>
 # include "nlohmann.h"
-# include <typeinfo>
 
 using json = nlohmann::json;
 using namespace std;
@@ -18,6 +17,7 @@ struct PolylineEntry {
     Type type;
 };
 
+// Converting string type to map, using json
 void Parse(PolylineEntry polylines[], int size) {
     for (int i = 0; i < size; i++) {
         if (polylines[i].type == String) {
@@ -31,96 +31,79 @@ void Parse(PolylineEntry polylines[], int size) {
     }
 }
 
-int addingValues(const int arr[]) {
-    map<string, int> polyline[] = {
-            {
-                    {"x", 0},
-                    {"y", 0},
-            },
+// Creating global var.
+PolylineEntry entry0 = {
+        {
+                {"x", 0},
+                {"y", 0},
+        },
+        "",
+        Dictionary
+};
 
-            {
-                    {"x", 10},
-                    {"y", 10},
-            },
+PolylineEntry entry1 = {
+        {
+                {"x", 10},
+                {"y", 10},
+        },
+        "",
+        Dictionary
+};
 
-            {
-                    {"x", 20},
-                    {"y", 20},
-            },
+PolylineEntry entry2 = {
+        {},
+        R"({"x": 20, "y": 20})",
+        String
+};
 
-            {
-                    {"x", 30},
-                    {"y", 30},
-            }
-    };
+PolylineEntry entry3 = {
+        {
+                {"x", 30},
+                {"y", 30},
+        },
+        "",
+        Dictionary
+};
 
-    PolylineEntry entry0 = {
-            {
-                    {"x", 0},
-                    {"y", 0},
-            },
-            "",
-            Dictionary
-    };
+PolylineEntry polylines[] = {
+        entry0,
+        entry1,
+        entry2,
+        entry3,
+};
 
-    PolylineEntry entry1 = {
-            {
-                    {"x", 10},
-                    {"y", 10},
-            },
-            "",
-            Dictionary
-    };
-
-    PolylineEntry entry2 = {
-            {},
-            R"({"x": 20, "y": 20})",
-            String
-    };
-
-    PolylineEntry entry3 = {
-            {
-                    {"x", 30},
-                    {"y", 30},
-            },
-            "",
-            Dictionary
-    };
-
-    PolylineEntry polylines[] = {
-            entry0,
-            entry1,
-            entry2,
-            entry3,
-    };
-
+int addingValues(std::map<string, int> &offset) {
     Parse(polylines, 4);
 
+    // Outputting starting points
     for (auto & poly : polylines) {
         for (const auto &p : poly.dict) {
             cout << "m[" << p.first << "] = " << p.second << '\n';
         }
     }
+
     cout << "\n" << "Adding new values ..." << endl << "\n";
+
     for (auto & poly : polylines) {
-        for (const auto &p: poly.dict) {
+        for (const auto &p: poly.dict ) {
             if( p.first == "x") {
-                int a = p.second + arr[0];
-                cout << "m[" << a << "] = " << a << '\n';
+                int a = p.second + offset["x"];
+                cout << "m[" << p.first << "] = " << a << '\n';
             }
             else if ( p.first == "y") {
-                int a = p.second + arr[1];
-                cout << "m[" << a << "] = " << a << '\n';
+                int a = p.second + offset["y"];
+                cout << "m[" << p.first << "] = " << a << '\n';
             }
 
         }
     }
-
     return 0;
-
 }
+
 
 int main() {
-    int arr[] = {10, -5};
-    addingValues(arr);
+    map<string, int> offset{{"x", 10}, {"y", -5}};
+    addingValues(offset);
 }
+
+// Thanks to Chak Franklin, for explaining out how to properly convert string to map format:)
