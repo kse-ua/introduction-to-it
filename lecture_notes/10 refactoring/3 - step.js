@@ -10,7 +10,7 @@ const move =
 
 const coordParse = (item) =>
   //Cheking for 'True' or 'False'
-  typeof item === 'string' ? JSON.parse(item) : item;
+  (typeof item === 'string' ? JSON.parse(item) : item);
 
 const polyline = [
   { x: 0, y: 0 },
