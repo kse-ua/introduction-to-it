@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 //Here we create function in function using multi arrows
 const move = (offset) => (point) => {
   point.x += offset.x;
@@ -8,7 +8,7 @@ const move = (offset) => (point) => {
 
 const conditionalParse = (item) => {
   //Checking for 'object' using Parsing
-  if (typeof item === "object") return item;
+  if (typeof item === 'object') return item;
   return JSON.parse(item);
 };
 
