@@ -1,25 +1,19 @@
 import json
 
-def parse(point):
-    if type(point) != dict:
-        point = json.loads(point)
-    else:
-        pass
-    return point
-
+parse = lambda point: json.loads(point) if(type(point) != dict) else None
 
 def move(offset, point):
     for key in point:
         if key in offset:
-            point[key] += offset[key]
-    return point
+            moved =  point[key] + offset[key]
+    return moved
     
 
-# that looks not so good, but i don't know how to add 2 arguments to a map function
 def mapping(points):
+    mapped = []
     for i in range(0, len(points)):
-        points[i] = move(start_point, points[i])
-    return points
+        mapped[i] = move(start_point, points[i])
+    return mapped
 
 
 polyline = [
@@ -29,5 +23,6 @@ polyline = [
     { "x": 30, "y": 30 }]
 
 start_point = { "x": 10, "y": -5 }
-path = mapping(list(map(parse, polyline)))
+parsed = list(map(parse, polyline))
+path = mapping(parsed)
 print(path)
