@@ -5,11 +5,11 @@ using namespace std;
 int polyline[4][2] ={{0, 0}, {10, 10}, {20, 20}, {30, 30}};
 
 // Using a camelCase for function names
-int initialPoint() {
+int initialPoint(int size) {
 
     // Outputting values from polyline in an appropriate format
     for (auto & i : polyline) {
-        for (int j = 0; j < 2; ++j) {
+        for (int j = 0; j < size; ++j) {
             if (j == 0) {
                 cout << "x, y = " << i[j];
             } else {
@@ -20,11 +20,11 @@ int initialPoint() {
     return 0;
 }
 
-int addingValues(const int arr[]) {
+int addingValues(const int arr[], int size) {
     cout << "\n" << "Adding new values ..." << endl << "\n";
 
     for (auto & i : polyline) {
-        for (int j = 0; j < 2; ++j) {
+        for (int j = 0; j < size; ++j) {
             if (j == 0) {
                 cout << "x, y = " << i[j];
             } else {
@@ -38,7 +38,7 @@ int addingValues(const int arr[]) {
 
 int main() {
     int arr[] = {10, -5};
-    initialPoint();
-    addingValues(arr);
+    initialPoint(2);
+    addingValues(arr, 2);
     return 0;
 }
