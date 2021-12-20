@@ -24,5 +24,5 @@ polyline = [
     {'x': 30, 'y': 30},
 ]
 
-shift({'x': 10, 'y': -5}, polyline)
+shift({ 'x': 10, 'y': -5 }, polyline)
 print(polyline)
