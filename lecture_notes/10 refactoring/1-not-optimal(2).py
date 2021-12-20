@@ -1,4 +1,3 @@
-'use strict';
 import json
 
 def shift(offset, points):
