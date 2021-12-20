@@ -1,7 +1,7 @@
 'use strict';
 
 function shift(offset, points) {
-    points.forEach(function (point) {
+    points.forEach((point) => {
         point.x += offset.x;
         point.y += offset.y;
     });
@@ -15,10 +15,10 @@ function parser(point){
 }
 
 let polyline = [
-    {x: 0, y: 0},
-    {x: 10, y: 10},
+    { x: 0, y: 0 },
+    { x: 10, y: 10 },
     '{"x": 20, "y": 20}',
-    {x: 30, y: 30}
+    { x: 30, y: 30 }
 ]
 
 polyline = polyline.map(function(e) {
