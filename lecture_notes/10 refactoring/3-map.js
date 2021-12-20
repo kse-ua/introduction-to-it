@@ -9,12 +9,12 @@ function shift(offset, points) {
 }
 
 function parser(point){
-    if(typeof(point) == 'string')
+    if (typeof point === 'string')
         return JSON.parse(point);
     return point;
 }
 
-var polyline = [
+let polyline = [
     {x: 0, y: 0},
     {x: 10, y: 10},
     '{"x": 20, "y": 20}',
