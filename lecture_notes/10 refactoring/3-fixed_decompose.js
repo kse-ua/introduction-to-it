@@ -13,8 +13,7 @@ const addingArrAndObj = (addend, points) => {
             point = addTwoObj(addend, point);
         } else {
             point = JSON.parse(point);
-            point.x += addend.x;
-            point.y += addend.y;
+            point = addTwoObj(addend, point);
         }
     });
     return points;
