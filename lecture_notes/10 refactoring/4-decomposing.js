@@ -22,6 +22,6 @@ const polyline = [
 ];
 
 const type = polyline.map(elementType); /* the function "elementType" is
-    executed for EVERY line of "polyline" because the "map() method" is used */
+    executed for EVERY line of "polyline" because the "map" method is used */
 const newShift = type.map( shift({ coordinate1: 10, coordinate2: -5 }) );
 console.log({ newShift });
