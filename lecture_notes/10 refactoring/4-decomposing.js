@@ -9,8 +9,8 @@ const elementType = (point) => {
 };
 
 const shift = (offset) => (point) => {
-  point.x += offset.x;
-  point.y += offset.y;
+  point.x += offset.coordinate1;
+  point.y += offset.coordinate2;
   return point;
 };
 
@@ -23,5 +23,5 @@ const polyline = [
 
 const type = polyline.map(elementType); /* the function "elementType" is
     executed for EVERY line of "polyline" because the "map() method" is used */
-const newShift = type.map( shift({ x: 10, y: -5 }) );
+const newShift = type.map( shift({ coordinate1: 10, coordinate2: -5 }) );
 console.log({ newShift });
