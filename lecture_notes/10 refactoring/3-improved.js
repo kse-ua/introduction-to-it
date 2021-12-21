@@ -22,5 +22,5 @@ const polyline = [
 ];
 
 const newShift = polyline.map( shift({ coordinate1: 10, coordinate2: -5 }) ); /* the function
-  "shift" is executed for EVERY line of "polyline" because the "map() method" is used */
+  "shift" is executed for EVERY line of "polyline" because the "map" method is used */
 console.log({ newShift });
