@@ -29,3 +29,4 @@ const offset = move({ dx: 10, dy: -5 });
 const parsed = polyline.map(conditionalParse);
 const path = parsed.map(offset);
 console.log({ path });
+

@@ -23,3 +23,4 @@ const polyline = [
 const offset = move({ x: 10, y: -5 });
 const path = polyline.map(offset);
 console.log({ path });
+

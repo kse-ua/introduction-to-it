@@ -34,3 +34,4 @@ const shift = new Shift({ dx: 10, dy: -5 });
 const parsed = polyline.map(conditionalParse);
 const path = parsed.map((point) => shift.move(point));
 console.log({ path });
+

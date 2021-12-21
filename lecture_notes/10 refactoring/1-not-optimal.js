@@ -25,3 +25,4 @@ const polyline = [
 
 shift({ x: 10, y: -5 }, polyline);
 console.log({ polyline });
+
