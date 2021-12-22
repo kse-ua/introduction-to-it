@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 const shift =
   ({ a, b }) =>
     ({ x, y }) => ({ x: x + a, y: y + b });
 
 const typeCheck = (line) =>
-  typeof line !== "object" ? JSON.parse(line) : line;
+  typeof line !== 'object' ? JSON.parse(line) : line;
 
 const polyline = [
   { x: 0, y: 0 },
