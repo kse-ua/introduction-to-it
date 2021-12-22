@@ -12,7 +12,7 @@ function parser(points) {
     points.forEach(
         function (point) {
             if (typeof (point) === "string") {
-                var i = points.indexOf(point)
+                let i = points.indexOf(point)
                 points[i] = JSON.parse(points[i])
             }
         });
