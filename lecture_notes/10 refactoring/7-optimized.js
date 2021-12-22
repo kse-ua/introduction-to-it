@@ -2,8 +2,8 @@
 
 const shift = (offset) => (point) => {
   const shifted = {
-    x: (point.x += offset.x),
-    y: (point.y += offset.y),
+    x: (point.x + offset.x),
+    y: (point.y + offset.y),
   };
   return shifted;
 };
