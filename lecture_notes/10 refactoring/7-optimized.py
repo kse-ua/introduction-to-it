@@ -1,10 +1,13 @@
 import ast
 
 def shift(offset, points):
+    moved = []
     for point in points:
-        point['x'] += offset['x']
-        point['y'] += offset['y']
-    return points
+        moved_x = point['x'] + offset['x']
+        moved_y = point['y'] + offset['y']
+        moved.append({'x': moved_x, 'y': moved_y})
+        
+    return moved
 
 def parsing(points):
     parsed = []
