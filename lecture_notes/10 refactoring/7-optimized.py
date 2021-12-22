@@ -7,7 +7,13 @@ def shift(offset, points):
     return points
 
 def parsing(points):
-    parsed = [ast.literal_eval(point) if type(point) == str else point for point in points]
+    parsed = []
+    for point in points:
+        if type(point) == str:
+            parsed_point = ast.literal_eval(point)
+            parsed.append(parsed_point)
+        else:
+            parsed.append(point)
     return parsed
 
 
