@@ -1,19 +1,19 @@
 'use strict';
 
 const actionsType = {
-    string: (element) => JSON.parse(element),
-    object: (element) => element,
-};  
+  string: (element) => JSON.parse(element),
+  object: (element) => element,
+};
 
-const elementType = (point) => actionsType[typeof point](point); 
+const elementType = (point) => actionsType[typeof point](point);
 
 class BigMovement {
-    constructor(coordinate1, coordinate2) {
-        this.coordinate1 = coordinate1;
-        this.coordinate2 = coordinate2;
-    }
-    
-    shift(point) {
+  constructor(coordinate1, coordinate2) {
+    this.coordinate1 = coordinate1;
+    this.coordinate2 = coordinate2;
+  }
+
+  shift(point) {
     point.x += this.coordinate1;
     point.y += this.coordinate2;
     return point;
@@ -29,5 +29,5 @@ const polyline = [
 
 const move = new BigMovement(10, -5);
 const type = polyline.map(elementType);
-const newShift = type.map( (point) => move.shift(point) );
+const newShift = type.map((point) => move.shift(point));
 console.log({ newShift });
