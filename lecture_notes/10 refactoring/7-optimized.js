@@ -2,8 +2,8 @@
 
 const shift = (offset) => (point) => {
   const shifted = {
-    x: (point.x + offset.x),
-    y: (point.y + offset.y),
+    x: point.x + offset.x,
+    y: point.y + offset.y,
   };
   return shifted;
 };
@@ -24,3 +24,4 @@ const offset = shift({ x: 10, y: -5 });
 const parsed = polyline.map(conditional);
 const shifted = parsed.map(offset);
 console.log({ shifted });
+
