@@ -16,6 +16,6 @@ const polyline = [
 const offset = { x: 10, y: -5 };
 
 const parsed = polyline.map(parse);
-const mooved = parsed.map(parsed => moove(parsed, offset));
+const mooved = parsed.map((parsed) => moove(parsed, offset));
 console.log(mooved);
 
