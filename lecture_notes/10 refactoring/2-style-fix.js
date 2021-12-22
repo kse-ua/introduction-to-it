@@ -1,4 +1,5 @@
 'use strict';
+
 const shift = (offset, points) => {
   for (const point of points) {
     const type = typeof point;
