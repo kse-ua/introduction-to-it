@@ -2,10 +2,10 @@
 
 const shift = (offset) => (dot) => {
   const moved = {
-    x: dot.x += offset.dx,
+    x: dot.x = dot.x + offset.dx,
     y: dot.y += offset.dy,
   };
-return moved;
+  return moved;
 };
 
 const parsers = { string: JSON.parse, object: (obj) => obj };
