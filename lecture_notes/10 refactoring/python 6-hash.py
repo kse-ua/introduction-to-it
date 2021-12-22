@@ -1,13 +1,3 @@
-import ast  # abstract syntax tree, conversion of code "{'x': 20,'y': 20}" >> {'x': 20,'y': 20}
-
-move = lambda point: {'x': point['x'] + offset['dx'], 'y': point['y'] + offset['dy']}
-# other version
-# def move(point):
-# return {'x': point['x'] + offset['dx'], 'y': point['y'] + offset['dy']}
-parsers = lambda point, x: ast.literal_eval(point) if x == True else point
-# returns a dictionary, "{'x': 20,'y': 20}" >> {'x': 20,'y': 20}
-
-
 def conditionalParse(point):
     return parsers(point, (str(type(point)) == "<class 'str'>"))
 # other version
