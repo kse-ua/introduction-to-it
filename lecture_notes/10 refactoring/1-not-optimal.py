@@ -1,4 +1,5 @@
 import ast
+
 def shift(offset, points):
     for point in points:
         type_of = type(point)
