@@ -9,7 +9,7 @@ class Point {
   static get parsers() {
     return {
       object: (obj) => obj,
-      string: JSON.parse
+      string: JSON.parse,
     };
   }
 
@@ -27,7 +27,6 @@ class Point {
     return new Point(x, y);
   }
 }
-
 
 const offset = { dx: 10, dy: -5 };
 const rawData = [
