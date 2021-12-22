@@ -10,7 +10,6 @@ const shift = (offset, points) => {
     } else {
       point = JSON.parse(point);
       point.x += offset.x;
-
       point.y += offset.y;
     }
 
