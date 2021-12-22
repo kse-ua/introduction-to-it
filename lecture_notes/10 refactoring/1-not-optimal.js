@@ -5,8 +5,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Enter coordinate X: ", function (X) {
-  rl.question("Enter coordinate Y: ", function (Y) {
+rl.question('Enter coordinate X: ', (x) => {
+  rl.question('Enter coordinate Y: ', (y) => {
     const x = Number(X);
     const y = Number(Y);
 
