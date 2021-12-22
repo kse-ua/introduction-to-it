@@ -6,20 +6,20 @@ const actionsType = {
 };
 
 /* called this new function (which is actually a dictionary) "actionsType"
-cuz it describes actions that need to be done 
+cuz it describes actions that need to be done
 with the element depending on its type.
 This dictionary stores element's type as 'key',
 and actions on this element(function) as its 'value' */
 
- const elementType = (point) => actionsType[typeof point](point);
- /* "actionsType[typeof point](point)"  is a function
+const elementType = (point) => actionsType[typeof point](point);
+/* "actionsType[typeof point](point)"  is a function
  which firstly takes point's type ("actionsType[typeof point]")
  and then returns a function depending on
  the type of this point, taking point as an argument */
 
 const shift = ({ coordinate1, coordinate2 }) => ({ x, y }) => ({
-    x: x + coordinate1,
-    y: y + coordinate2,
+  x: x + coordinate1,
+  y: y + coordinate2,
 });
 
 const polyline = [
