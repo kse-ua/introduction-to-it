@@ -1,7 +1,8 @@
 'use strict';
 
+ //a ternary operator here
 const elementType = (point) =>
-  (typeof point === 'object' ? point : JSON.parse(point) ); //a ternary operator here
+  (typeof point === 'object' ? point : JSON.parse(point));
   
 const shift = ({ coordinate1, coordinate2 }) => ({ x, y }) => ({ x: x + coordinate1, y: y + coordinate2 });
 
@@ -13,5 +14,5 @@ const polyline = [
 ];
 
 const type = polyline.map(elementType);
-const newShift = type.map( shift({ coordinate1: 10, coordinate2: -5 }) );
+const newShift = type.map(shift({ coordinate1: 10, coordinate2: -5 }));
 console.log({ newShift });
