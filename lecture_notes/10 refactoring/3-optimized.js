@@ -1,11 +1,11 @@
 'use strict';
-const moove = (point) => {
+const moove = (point, offset) => {
   point.x += offset.x;
   point.y += offset.y;
   return point;
 };
 
-const parse = (point) => (typeof point === 'object') ? point : JSON.parse(point);
+const parse = (cord) => (typeof cord === 'object') ? cord : JSON.parse(cord);
 
 const polyline = [
   { x: 0, y: 0 },
