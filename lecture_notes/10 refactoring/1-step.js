@@ -1,24 +1,22 @@
 'use strict';
 
 const pointParse = (points) => {
-  points.map((point) => {
+  return (points.map((point) => {
     if (typeof point !== 'object') {
       return JSON.parse(point);
     } else {
       return point;
     }
-  });
-  return points;
+  }));
 };
 
 // Taking a result from PointParse and shifting it
 const pointsShift = (arr, dotParam) => {
-  arr.map((dot) => {
+  return (arr.map((dot) => {
     dot['x'] += dotParam['x'];
     dot['y'] += dotParam['y'];
     return dot;
-  });
-  return arr;
+  }));
 };
 
 const polyline = [
