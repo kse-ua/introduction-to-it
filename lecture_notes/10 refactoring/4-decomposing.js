@@ -2,10 +2,8 @@
 
 // declaring a separate function for checking a type of "point"
 const elementType = (point) => {
-  if (typeof point === 'object')
-    return point;
-  else
-    return JSON.parse(point);
+  if (typeof point === 'object') point;
+  return JSON.parse(point);
 };
 
 const shift = (offset) => (point) => {
