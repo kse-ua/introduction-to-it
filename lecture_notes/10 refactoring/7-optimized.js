@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const shift = (offset) => (point) => {
   const shifted = {
@@ -9,7 +9,7 @@ const shift = (offset) => (point) => {
 };
 
 const conditional = (item) => {
-  if (typeof item === "object") return item;
+  if (typeof item === 'object') return item;
   return JSON.parse(item);
 };
 
