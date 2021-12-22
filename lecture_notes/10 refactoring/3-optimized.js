@@ -5,7 +5,7 @@ const moove = (point, offset) => {
   return point;
 };
 
-const parse = (cord) => (typeof cord === 'object') ? cord : JSON.parse(cord);
+const parse = (cord) => (typeof cord === 'object' ? cord : JSON.parse(cord));
 
 const polyline = [
   { x: 0, y: 0 },
