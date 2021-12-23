@@ -3,6 +3,10 @@
 #include <variant>
 #include <vector>
 
+/*
+I've implemented a simple custom recursive-descent LL(1) json parser since cpp has no builtin json parser.
+It needs further improvements but it was a 2-night work :)
+*/
 #include "json.h"
 #include "parser.h"
 
