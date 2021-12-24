@@ -1,19 +1,15 @@
-import ast
+import json
 
-def shift(offset, points):
+
+def parse_shift(points):
+    return [json.loads(point) if type(point) == str else point for point in points]
+
+
+def shift(points, offset):
     for point in points:
-        type_of_item = type(point)
-
-        if type_of_item is dict:
-            point['x'] += offset['x']
-            point['y'] += offset['y']
-
-        else:
-            index = points.index(point)
-            points[index] = ast.literal_eval(point)
-            points[index]['x'] += offset['x']
-            points[index]['y'] += offset['y']
-
+        point['x'] += offset['x']
+        point['y'] += offset['y']
+    
     return points
 
 
@@ -24,5 +20,5 @@ polyline = [
   { 'x': 30, 'y': 30 }
 ]
 
-shift({'x': 10, 'y': -5}, polyline)
-print(polyline)
+parser = parse_shift(polyline)
+print(shift(parser, {'x': 10, 'y': -5}))
