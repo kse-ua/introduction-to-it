@@ -1,3 +1,5 @@
+'use strict';
+
 function move(offsetPoint, initialPoints) {
     let results = [];
     for (let element of initialPoints) {
