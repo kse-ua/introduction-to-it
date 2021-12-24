@@ -5,7 +5,6 @@ def parse(point):
         point = json.loads(point)
     return point
 
-
 def shift(point, offset):
     point["x"] += offset["x"]
     point["y"] += offset["y"]
