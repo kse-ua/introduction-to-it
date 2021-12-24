@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
 const shift = (offset, points) => {
   for (const point of points) {
     const type = typeof point;
-    if (type === "object") {
+    if (type === 'object') {
       point.x += offset.x;
       point.y += offset.y;
     } else {
