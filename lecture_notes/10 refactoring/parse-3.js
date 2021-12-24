@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 const shift =
   ({ a, b }) =>
   ({ x, y }) => ({ x: x + a, y: y + b });
 
 const checkType = (line) =>
-  typeof line !== "object" ? JSON.parse(line) : line;
+  typeof line !== 'object' ? JSON.parse(line) : line;
 
 const offset = shift({ a: 10, b: -5 });
 
