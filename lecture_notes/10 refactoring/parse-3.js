@@ -5,7 +5,7 @@ const shift =
     ({ x, y }) => ({ x: x + a, y: y + b });
 
 const checkType = (line) =>
-     { return typeof line !== 'object' ? JSON.parse(line) : line; };
+    { return typeof line !== 'object' ? JSON.parse(line) : line; };
 
 const offset = shift({ a: 10, b: -5 });
 
