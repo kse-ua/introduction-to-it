@@ -1,20 +1,20 @@
-# Introduction to IT
+# Вступ до ІТ
 
-In this repository contains examples and tasks for the course "Introduction to IT"
+Цей репозиторій містить в собі основні та допоміжні матеріали до курсу "Вступ до ІТ" (осінь 2022): практичні завдання, правила, дедлайни, загальні рекомендації
 
-## Course Sctructure
+## Структура курсу
 
-Протягом кожного терму (восьми тижнів) вас очікує по 4 пари на тиждень - зазвичай це буде 1 лекція + 3 практики.
+Протягом  терму (вісім тижнів) вас очікує по 4 пари на тиждень - зазвичай це буде 2 лекції + 2 практики. Виключенням є перший тиждень (3 лекції + 1 практика) та останній (1 лекція, на якій буде фінальний іспит + 3 практики).
 
-### Lectures
+### Лекції
 
-Лекції будуть одного з двох типів - на загальну тематику ІТ (безпека, архітектура, мережі тощо), або ж із програмування. Ми почнемо з мови Python, але встигнемо опанувати основи JavaScript та C++
+Лекції будуть одного з двох типів - на загальну тематику ІТ (безпека, архітектура, мережі тощо), або ж із програмування. 
 
-### Tasks
+### Домашні завдання
 
 Практичні заняття виділені для здачі домашніх завдань (assignments) та вирішення питань по ним або по лекціям.
 
-### Course materials
+### Навчальні матеріали
 
 [Детальніше про книжки та туторіали](/python_materials.md)
 
@@ -25,20 +25,19 @@ In this repository contains examples and tasks for the course "Introduction to I
 2. [Системи числення](/assignments_2021/assignment_2.md);
 3. [Робота з текстовими файлами](/assignments_2021/assignment_3.md);
 
-Tasks for lectures:
-- [Lecture #7: Basics](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/07%20basics/README.md)
-- [Lecture #8: Collections](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/08%20collections/README.md)
-- [Lecture #9: Functions](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/09%20functions/README.md)
-- [Lecture #10: Refactoring](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/10%20review/README.md)
-- [Lecture #11: Review](https://github.com/kse-ua/introduction-to-it/blob/main/lecture_notes/11%20refactoring/README.md)
 
-|  # | Lecture     | Max | Soft deadline | Hard deadline |
-|---:|-------------|----:|---------------|---------------|
-|  1 |             |   5 |         25.09 |          2.10 |
-|  2 |             |   5 |         11.10 |         18.10 |
-|  3 |             |   5 |         25.10 |         25.10 |
-|  7 | Basics      |  30 |         26.11 |          3.12 |
-|  8 | Collections |  30 |         03.12 |          3.12 |
-|  9 | Functions   |  30 |         12.12 |         17.12 |
-| 10 | Refactoring |  30 |         17.12 |         24.12 |
-| 11 | Review      |  30 |         24.12 |         26.12 |
+|            # | Завдання            | Max | Soft deadline  | Hard deadline |
+|-------------:|---------------------|----:|----------------|---------------|
+|            1 | Знайомство з Python |   3 | 25.09          | 2.10          |
+|            2 | Crash Course I      |   4 | 11.10          | 18.10         |
+|            3 | Crash Course II     |   4 | 25.10          | 25.10         |
+|            4 | Basics              |   6 | 26.11          | 3.12          |
+|            5 | Час для гри!        |   8 | 03.12          | 3.12          |
+|       Quiz I | Інтернет            |   5 | Не передбачено | TBA           |
+|      Quiz II | Безпека             |   5 | Не передбачено | TBA           |
+
+
+| Контрольний захід | Max | Дата проведення |
+|------------------:|----:|:---------------:|
+|      Midterm Exam |   5 |       TBA       |
+|        Final Exam |   1 |       TBA       |
