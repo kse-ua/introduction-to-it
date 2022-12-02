@@ -18,6 +18,8 @@
 
 [Детальніше про книжки та туторіали](/python_materials.md)
 
+Допоміжні вправи для офісних годин знаходяться [тут](/office_hours_exercises.md)
+
 ### Графік робіт
 ##### Перший терм
 |       # | Завдання                                                  | Max | Soft deadline                | Hard deadline                |
