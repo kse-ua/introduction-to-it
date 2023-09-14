@@ -63,3 +63,5 @@ python main.py
 1. Перечитайте ще раз [загальні рекомендації](./../python_materials.md)
 2. [Simple progams
    ](https://hyperskill.org/knowledge-map/428?track=6). Вивчіть всі підрозідли (потрібна реєстрація за інтсрукцією з попереднього пункту). Зверніть увагу та перевірте, що ви реєструєтесь на сайті саме через [посилання в першому пункті](https://lp.jetbrains.com/jba-students/).  Якщо розділ *Programs with numbers* буде вам заскладним, можете пропустити саме цей розділ, ми будемо розглядати це на парі
+3. [Basic data types](https://hyperskill.org/learn/step/5852)
+4. [Integer arithmetics](https://hyperskill.org/learn/step/5865)
