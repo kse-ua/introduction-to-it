@@ -39,6 +39,7 @@
 - [Коротка довідка](/assignments_2022/res/git_gui.md) по роботі з візуальним клієнтом;
 - [Офіцйна книжка по Git](https://git-scm.com/book/uk/v2). Вам знадобляться перші 3 розділи
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 Будь-ласка, не починайте робити другу частину завдання, поки ви не пройшли повністю першу. Робота зі справжнім репозиторієм вимагає знань багатьох концепцій, з якими ви можете познайомитсь через гру learn git branching
 
