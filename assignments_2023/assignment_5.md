@@ -40,6 +40,9 @@
 - [Офіцйна книжка по Git](https://git-scm.com/book/uk/v2). Вам знадобляться перші 3 розділи
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Branches](https://www.atlassian.com/git/tutorials/using-branches)
+
+Загалом, [документація від Atlassian](https://www.atlassian.com/git/tutorials/what-is-git) є дуже якісною та ми рекомендуємо прочитати її поністю для більш детального розуміння Git.
 
 Будь-ласка, не починайте робити другу частину завдання, поки ви не пройшли повністю першу. Робота зі справжнім репозиторієм вимагає знань багатьох концепцій, з якими ви можете познайомитсь через гру learn git branching
 
