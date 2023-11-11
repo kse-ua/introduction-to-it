@@ -36,7 +36,7 @@
 Ви можете стикнутися з безліччю дивних помилок при роботі з git, це абсолютно нормально. Будь ласка, пишіть повідомлення про помилки в чати, питайте на практичних та office hours і будемо розбиратися разом.
 
 ## Матеріали
-- [Коротка довідка](/assignments_2022/res/git_gui.md) по роботі з візуальним клієнтом;
+- [Коротка довідка](/assignments_2023/res/git_gui.md) по роботі з візуальним клієнтом;
 - [Офіцйна книжка по Git](https://git-scm.com/book/uk/v2). Вам знадобляться перші 3 розділи
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
